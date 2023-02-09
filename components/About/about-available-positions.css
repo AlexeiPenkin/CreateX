@@ -1,0 +1,200 @@
+body {
+    max-width: 1920px;
+    background-color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: #1E212C;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+    position: absolute;
+    height: 52px;
+    margin: 20px 345px 80px;
+    z-index: 10;
+}
+.header__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__navbar-logo {
+    margin-right: 60px;
+}
+.header__navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 447px;
+    margin-right: 172px;
+}
+.navbar-menu-item {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%; /* 22px */
+    color: #424551;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.navbar-menu-item:last-child {
+    margin-right: 0;
+}
+
+.navbar-call {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 421px;
+}
+.navbar-call-block {
+    display: flex;
+    width: 175px;
+}
+#navbar-call-phone {
+    margin-right: 36px;
+}
+.navbar-call-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+.navbar__contact {
+    display: flex;
+    flex-direction: column;
+}
+.navbar-call-label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #424551;
+}
+.navbar-call-contact {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #1E212C;
+}
+#navbar-call-email {
+    width: 210px;
+}
+
+/* Intro */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: right;
+    width: 1920px;
+    height: 695px;
+    background-image: url('../../img/About/about_available-positions_background.svg');
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    margin-bottom: 120px;
+}
+.intro__container {
+    margin: 80px 345px 120px;
+}
+.navigation__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 293px;
+    margin-bottom: 40px;
+}
+.navigation__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #9A9CA5;
+}
+#visited {
+    color: #424551;
+}
+.navigation__links_divider {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #9A9CA5;
+}
+.intro__title {
+    width: 600px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 130%;
+    letter-spacing: 1px;
+    color: #1E212C;
+    margin-bottom: 24px;
+}
+.intro__text {
+    width: 600px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    color: #787A80;
+}
+
+/* Vacancies */
+
+.vacansies {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 345px 180px;
+}
+.vacansies__container {
+    display: flex;
+    flex-direction: column;
+    width: 705px;
+    height: 416px;
+    margin-right: 135px;
+}
+.vacancy__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 705px;
+    height: 124px;
+}
+.vacancy {
+    display: flex;
+    flex-direction: column;
+    width: 434px;
+    height: 59px;
+}
+.vacancy__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 191px;
+    height: 21px;
+}
+.vacancy__meta-icon {
+}
+.vacancy__meta-location {
+}
+.vacancy__meta-divider {
+}
+.vacancy__meta-clock {
+}
+.vacancy__meta-employment {
+}
+.vacancy__meta-btn {
+}
+.subscribe {
+}
+.subscribe__title {
+}
+.subscibe__text {
+}
+.subscibe__buttons {
+}
+.subscibe__subscibe-btn {
+}
+.subscribe__submit-btn {
+}
