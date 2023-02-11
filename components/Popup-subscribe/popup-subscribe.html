@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./popup-subscribe.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>Popup - Subscribe</title>
 </head>
+
 <body>
-    
+
+
+
+    <section class="popup__subscribe">
+
+        <img src="../../img/Popup-Subscribe/close-btn.png" alt="icon" class="popup__close-btn">
+
+        <h2 class="popup__subscribe-title">Subscribe to our newsletter</h2>
+
+        <div class="popup__data-input">
+
+            <div class="popup-input-form">
+                <p class="popup__label">Name*</p>
+                <input class="popup__input" type="text" id="name" placeholder="Your name" required></input>
+            </div>
+            
+            <div class="popup-input-form">
+                <p class="popup__label">Email*</p>
+                <input class="popup__input" type="email" id="email" placeholder="Your working email" required></input>
+            </div>
+            
+        </div>
+
+        <button class="submit-form-btn">SEND</button>
+
+    </section>
+
 </body>
+
 </html>

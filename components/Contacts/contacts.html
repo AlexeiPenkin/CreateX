@@ -2,11 +2,343 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./contacts.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>Contacts</title>
 </head>
 <body>
+
+    <header class="header">
+        <nav class="header__navbar">
+            <img src="../../img/header_logo.svg" alt="logo" class="header__navbar-logo">
+            <ul class="header__navbar-menu">
+                <li class="navbar-menu-item">About Us</li>
+                <li class="navbar-menu-item">Services</li>
+                <li class="navbar-menu-item">Work</li>
+                <li class="navbar-menu-item">News</li>
+                <li class="navbar-menu-item">Contacts</li>
+            </ul>
+            <div class="navbar-call">
+
+                <div class="navbar-call-block" id="navbar-call-phone">
+                    <img src="../../img/header_mob.phone-icon.svg" alt="icon" class="navbar-call-icon">
+                    <div class="navbar__contact">
+                        <div class="navbar-call-label">Call us</div>
+                        <div class="navbar-call-contact">(405) 555-0128</div>
+                    </div>
+                </div>
+
+                <div class="navbar-call-block" id="navbar-call-email">
+
+                    <img src="../../img/header_chat-icon.svg" alt="icon" class="navbar-call-icon">
+                    <div class="navbar__contact">
+                        <div class="navbar-call-label">Talk to us</div>
+                        <div class="navbar-call-contact">hello@createx.com</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <div class="intro__container">
+            <nav class="navigation__links">
+                <a href="#" class="navigation__link" id="visited">Homepage</a>
+                <p class="navigation__links_divider">/</p>
+                <a href="#" class="navigation__link">Contacts</a>
+            </nav>
+            <h1 class="intro__title">CONTACTS</h1>
+            <p class="intro__text">
+                Contact us for all your construction needs. We always welcome any questions and comments.
+            </p>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2 class="contact-form__title">Contact us</h2>
+        <p class="contact-form__subtitle">
+            Please complete the form. Detailed information will help us to make a tuned offer.
+        </p>
+        
+        <div class="contact-form__container">
+            <img src="../../img/Contacts/container_img.png" alt="img" class="container__img">
+            <fieldset class="inputs">
+
+                <div class="post-form">
+
+                    <div class="input-forms">
+
+                        <div class="post-form__data-input">
+                            <div class="post-form-input">
+                                <p class="post-form__label">Name*</p>
+                                <input class="post-form__input" type="text" id="name" placeholder="Your name" required></input>
+                            </div>
+
+                            <div class="post-form-input">
+                                <p class="post-form__label">Phone*</p>
+                                <input class="post-form__input" id="name" type="tel" placeholder="Your phone number" required></input>
+                            </div>
+                            
+                            <div class="post-form-input">
+                                <p class="post-form__label">Email*</p>
+                                <input class="post-form__input" type="email" id="email" placeholder="Your working email" required></input>
+                            </div>
+                        </div>
+
+                        <div class="dropdown-menus">
+
+                            <div class="dropdown-menu__wrapper">
+                                <p class="dropdown-menu__label">I am interested in</p>
+                                <select class="dropdown-menu">
+                                    <option class="menu-item">Construction</option>
+                                    <option class="menu-item">Project Development</option> 
+                                    <option class="menu-item">Interior Design</option> 
+                                    <option class="menu-item">Repairs</option> 
+                                </select>
+                            </div>
+
+                            <div class="dropdown-menu__wrapper">
+                                <p class="dropdown-menu__label">Location*</p>
+                                <select class="dropdown-menu">
+                                    <option class="menu-item">New York</option>
+                                    <option class="menu-item">Alabama</option> 
+                                    <option class="menu-item">Boston</option> 
+                                    <option class="menu-item">Los Angeles</option> 
+                                </select>
+                            </div>
+
+                            <div class="dropdown-menu-input">
+                                <p class="dropdown-menu__label">Preferred contact method</p>
+
+                                <div class="radiobuttons">
+                                    <div class="radiobutton-item">
+                                        <input type="radio" class="checkbox" checked>
+                                        <span class="radiobutton-label">Phone</span>
+                                    </div>
+                                    
+                                    <div class="radiobutton-item">
+                                        <input type="radio" class="checkbox">
+                                        <span class="radiobutton-label">Email</span>
+                                    </div>
+
+                                    <div class="radiobutton-item">
+                                        <input type="radio" class="checkbox">
+                                        <span class="radiobutton-label">Viber</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+        
+                    <div class="comment-form">
+                        <p class="post-form__label">Message*</p>
+                        <input class="comment-form__input" type="text" id="comment" placeholder="Your message"></input>
+                    </div>
+
+                    <div class="submit-form">
+                        <div class="agreement">
+                            <input type="checkbox" class="agreement__checkbox">
+                            <p class="agreement__text">
+                                I agree to receive communications from Createx Construction Bureau.
+                            </p>
+                        </div>
+                        <button class="submit-form-btn">SEND REQUEST</button>
+                    </div>
+        
+                </div>
+
+            </fieldset>
+
+        </div>
+
+    </section>
+
+    <section class="offices">
+
+        <h2 class="offices__title">Our offices</h2>
+
+        <p class="offices__text">
+            Give us a call, send us a note or visit our office. We can’t wait to hear from you!
+        </p>
+
+        <div class="offices__cards">
+
+            <div class="office__card">
+                <h3 class="office__card-heading">New York, USA</h3>
+                <p class="office__card-address">8502 Preston Rd. Inglewood, New York 98380</p>
+                <a href="#" class="office__card-link">See on th map</a>
+                <div class="office__card-contacts">
+                    <div class="card-contact" id="phone">
+                        <div class="card-contact__name">Call:</div>
+                        <div class="card-contact__data">(405) 555-0128</div>
+                    </div>
+                    <div class="card-contact" id="email">
+                        <div class="card-contact__name">Email:</div>
+                        <div class="card-contact__data">hello@createx.com</div>
+                    </div>
+                    <div class="card-contact" id="schedule">
+                        <div class="card-contact__name">Schedule:</div>
+                        <div class="card-contact__data">Mon - Fri 9:00 - 18:00</div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="../../img/boxes_divider.png" alt="line" class="box__divider">
+
+            <div class="office__card">
+                <h3 class="office__card-heading">New Jersey, USA</h3>
+                <p class="office__card-address">2464 Royal Ln. Mesa, New Jersey 45463</p>
+                <a href="#" class="office__card-link">See on th map</a>
+                <div class="office__card-contacts">
+                    <div class="card-contact" id="phone">
+                        <div class="card-contact__name">Call:</div>
+                        <div class="card-contact__data">(808) 555-0111</div>
+                    </div>
+                    <div class="card-contact" id="email">
+                        <div class="card-contact__name">Email:</div>
+                        <div class="card-contact__data">hello@createx.com</div>
+                    </div>
+                    <div class="card-contact" id="schedule">
+                        <div class="card-contact__name">Schedule:</div>
+                        <div class="card-contact__data">Mon - Fri 9:00 - 18:00</div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="../../img/boxes_divider.png" alt="line" class="box__divider">
+
+            <div class="office__card">
+                <h3 class="office__card-heading">San Francisco, USA</h3>
+                <p class="office__card-address">8502 Preston Rd. Inglewood, San Francisco 98380</p>
+                <a href="#" class="office__card-link">See on th map</a>
+                <div class="office__card-contacts">
+                    <div class="card-contact" id="phone">
+                        <div class="card-contact__name">Call:</div>
+                        <div class="card-contact__data">(505) 555-0125</div>
+                    </div>
+                    <div class="card-contact" id="email">
+                        <div class="card-contact__name">Email:</div>
+                        <div class="card-contact__data">hello@createx.com</div>
+                    </div>
+                    <div class="card-contact" id="schedule">
+                        <div class="card-contact__name">Schedule:</div>
+                        <div class="card-contact__data">Mon - Fri 10:00 - 19:00</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="socials">
+            <h2 class="socials__title">Find us at</h2>
+            <div class="socials__icons">
+                <img src="../../img/Contacts/contacts_WhatsApp-icon.svg" alt="icon" class="socials__icon">
+
+                <img src="../../img/Contacts/contacts_messenger.svg" alt="icon" class="socials__icon">
+
+                <img src="../../img/Contacts/contacts_facebook_icon.svg" alt="icon" class="socials__icon">
+
+                <img src="../../img/Contacts/contacts_twitter-icon.svg" alt="icon" class="socials__icon">
+
+                <img src="../../img/Contacts/contacts_youtube-icon.svg" alt="icon" class="socials__icon">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer__container">
+
+            <div class="block1">
+
+                <div class="block1__mission">
+                    <div class="block1__mission-logo">
+                        <img src="../../img/footer_logo.svg" alt="logo" class="mission-logo">
+                        <ul class="block1__mission-socials">
+                            <li class="social-icon">
+                                <img src="../../img/footer_WhatsApp-icon.svg" alt="icon" class="social-icon-whatsapp">
+                            </li>
+                            <li class="social-icon">
+                                <img src="../../img/footer_Messenger-icon.svg" alt="icon" class="social-icon-messenger">
+                            </li>
+                            <li class="social-icon">
+                                <img src="../../img/footer_Facebook-icon.svg" alt="icon" class="social-icon-facebook">
+                            </li>
+                            <li class="social-icon">
+                                <img src="../../img/footer_Twitter-icon.svg" alt="icon" class="social-icon-twitter">
+                            </li>
+                            <li class="social-icon">
+                                <img src="../../img/footer_Youtube-icon.svg" alt="icon" class="social-icon-twitter">
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="block1__mission-text">
+                        Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are proud to offer you quality construction and exemplary service. Our mission is to set the highest standards for construction sphere.
+                    </p>
+                </div>
+
+                <div class="block1__subsribe">
+                    <p class="subscribe__label">Let's stay in touch</p>
+                    <div class="subscribe__block">
+                        <input type="text" class="subscibe__form" placeholder="Your email address">
+                        <button class="subscribe__btn">subscribe</button>
+                    </div>
+                    <span class="subscribe__comment">
+                        *Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="block2">
+
+                <div class="address">
+                    <p class="heading">head office</p>
+                    <p class="line"><span>Address: </span>8502 Preston Rd. Inglewood, New York</p>
+                    <p class="line"><span>Call: </span>(405) 555-0128</p>
+                    <p class="line"><span>Email: </span>hello@createx.com</p>
+                </div>
+
+                <div class="contacts">
+                    <p class="heading">who we are</p>
+                    <ul class="lines">
+                        <li class="line">About us</li>
+                        <li class="line">Available Position</li>
+                        <li class="line">Contacts</li>
+                    </ul>
+                </div>
+
+                <div class="experience">
+                    <p class="heading">our experience</p>
+                    <ul class="lines">
+                        <li class="line">Services</li>
+                        <li class="line">Work</li>
+                        <li class="line">News</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="block3">
+
+                <div class="copyright">
+                    <p class="copyright-span">© All rights reserved. Made with <span><img src="../../img/footer_heart-icon.svg" alt="icon" class="heart-icon"></span> by Createx Studio </p>
+                </div>
+
+                <div class="navigation-btn">
+                    <p class="navigation-span">GO TO TOP</p>
+                    <img src="../../img/footer_up-btn.svg" alt="icon" class="up-btn">
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
     
 </body>
 </html>

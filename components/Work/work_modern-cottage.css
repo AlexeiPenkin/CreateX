@@ -121,7 +121,8 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 253px;
-    padding-top: 72px;
+    /* padding-top: 72px; */
+    margin-top: 80px;
     margin-bottom: 40px;
 }
 .navigation__link {

@@ -2,11 +2,359 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./news.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <title>News</title>
 </head>
 <body>
+
+    <header class="header">
+        <nav class="header__navbar">
+            <img src="../../img/header_logo.svg" alt="logo" class="header__navbar-logo">
+            <ul class="header__navbar-menu">
+                <li class="navbar-menu-item">About Us</li>
+                <li class="navbar-menu-item">Services</li>
+                <li class="navbar-menu-item">Work</li>
+                <li class="navbar-menu-item">News</li>
+                <li class="navbar-menu-item">Contacts</li>
+            </ul>
+            <div class="navbar-call">
+
+                <div class="navbar-call-block" id="navbar-call-phone">
+                    <img src="../../img/header_mob.phone-icon.svg" alt="icon" class="navbar-call-icon">
+                    <div class="navbar__contact">
+                        <div class="navbar-call-label">Call us</div>
+                        <div class="navbar-call-contact">(405) 555-0128</div>
+                    </div>
+                </div>
+
+                <div class="navbar-call-block" id="navbar-call-email">
+
+                    <img src="../../img/header_chat-icon.svg" alt="icon" class="navbar-call-icon">
+                    <div class="navbar__contact">
+                        <div class="navbar-call-label">Talk to us</div>
+                        <div class="navbar-call-contact">hello@createx.com</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <div class="intro__container">
+            <nav class="navigation__links">
+                <a href="#" class="navigation__link" id="visited">Homepage</a>
+                <p class="navigation__links_divider">/</p>
+                <a href="#" class="navigation__link">News</a>
+            </nav>
+            <h1 class="intro__title">NEWS</h1>
+            <p class="intro__text">
+                Stay tuned with our news, expert tips and articles.
+            </p>
+        </div>
+    </section>
+
+    <section class="categories">
+
+        <h2 class="categories__title">Categories</h2>
+
+        <div class="categories__filters">
+
+            <div class="categories__filter" id="filter1">
+                <p class="categories__filter-name" id="filter-name1">All News</p>
+            </div>
+
+            <div class="categories__filter" id="filter2">
+                <p class="categories__filter-name" id="filter-name2">Company News</p>
+            </div>
+
+            <div class="categories__filter" id="filter3">
+                <p class="categories__filter-name" id="filter-name3">Innovation</p>
+            </div>
+
+            <div class="categories__filter" id="filter4">
+                <p class="categories__filter-name" id="filter-name4">Industry News</p>
+            </div>
+
+            <div class="categories__filter" id="filter5">
+                <p class="categories__filter-name" id="filter-name5">Expert Tips</p>
+            </div>
+
+            <div class="categories__filter" id="filter6">
+                <p class="categories__filter-name" id="filter-name6">Marketing</p>
+            </div>
+
+        </div>
+
+        <div class="categories__cards">
+
+            <div class="categories__card">
+                <img src="../../img/News/categories_card-img1.png" alt="img" class="categories__card-img">
+                <div class="categories__card-description">
+                    <h3 class="categories__card-heading">
+                        How to Build Climate Change-Resilient Infrastructure
+                    </h3>
+                    <div class="categories__card-meta">
+                        <p class="card-meta-category">Industry News</p>
+                        <img src="../../img/News/categories_card-divider.png" alt="icon" class="card-meta-divider">
+                        <div class="card-meta-date">June 24, 2020</div>
+                        <img src="../../img/News/categories_card-divider.png" alt="icon" class="card-meta-divider">
+                        <img src="../../img/News/chat-icon.svg" alt="icon" class="card-meta-icon">
+                        <p class="card-meta-comments">4 comments</p>
+                    </div>
+                    <p class="categories__card-text">
+                        Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis...
+                    </p>
+                </div>
+            </div>
+
+            <div class="categories__card">
+                <img src="../../img/News/categories_card-img2.png" alt="img" class="categories__card-img">
+                <div class="categories__card-description">
+                    <h3 class="categories__card-heading">
+                        How Construction Can Help Itself
+                    </h3>
+                    <div class="categories__card-meta">
+                        <p class="card-meta-category">Innovation</p>
+                        <img src="../../img/News/categories_card-divider.png" alt="icon" class="card-meta-divider">
+                        <div class="card-meta-date">June 12, 2020</div>
+                        <img src="../../img/News/categories_card-divider.png" alt="icon" class="card-meta-divider">
+                        <img src="../../img/News/chat-icon.svg" alt="icon" class="card-meta-icon">
+                        <p class="card-meta-comments">June 12, 2020</p>
+                    </div>
+                    <p class="categories__card-text">
+                        Porta habitant vitae quam interdum. Leo viverra non volutpat rhoncus placerat vitae scelerisque. Rhoncus augue faucibus maecenas lacus...
+                    </p>
+                </div>
+            </div>
+
+            <div class="categories__card">
+                <img src="../../img/News/categories_card-img3.png" alt="img" class="categories__card-img">
+                <div class="categories__card-description">
+                    <h3 class="categories__card-heading">
+                        The Difference Between a Digger and an Excavator
+                    </h3>
+                    <div class="categories__card-meta">
+                        <p class="card-meta-category">Expert Tips</p>
+                        <img src="../../img/News/categories_card-divider.png" alt="icon" class="card-meta-divider">
+                        <div class="card-meta-date">May 16, 2020</div>
+                        <img src="../../img/News/categories_card-divider.png" alt="icon" class="card-meta-divider">
+                        <img src="../../img/News/chat-icon.svg" alt="icon" class="card-meta-icon">
+                        <p class="card-meta-comments">No comments</p>
+                    </div>
+                    <p class="categories__card-text">
+                        Cras est nisi purus velit facilisi vitae, dolor. Lorem scelerisque integer duis et nulla lobortis cursus. Viverra erat sollicitudin praesent viverra...
+                    </p>
+                </div>
+            </div>
+
+            <div class="categories__card">
+                <img src="../../img/News/categories_card-img4.png" alt="img" class="categories__card-img">
+                <div class="categories__card-description">
+                    <h3 class="categories__card-heading">
+                        Building Construction Hand Tools
+                    </h3>
+                    <div class="categories__card-meta">
+                        <p class="card-meta-category">Expert Tips</p>
+                        <img src="../../img/News/categories_card-divider.png" alt="icon" class="card-meta-divider">
+                        <div class="card-meta-date">February 25, 2020</div>
+                        <img src="../../img/News/categories_card-divider.png" alt="icon" class="card-meta-divider">
+                        <img src="../../img/News/chat-icon.svg" alt="icon" class="card-meta-icon">
+                        <p class="card-meta-comments">1 comment</p>
+                    </div>
+                    <p class="categories__card-text">
+                        Tellus quis aliquet volutpat nunc pulvinar donec sed sapien. Vitae elit id dolor, tristique massa. Fames lobortis orci rutrum bibendum integer...
+                    </p>
+                </div>
+            </div>
+
+            <div class="categories__card">
+                <img src="../../img/News/categories_card-img5.png" alt="img" class="categories__card-img">
+                <div class="categories__card-description">
+                    <h3 class="categories__card-heading">
+                        Top 10 Construction Trends
+                    </h3>
+                    <div class="categories__card-meta">
+                        <p class="card-meta-category">Industry News</p>
+                        <img src="../../img/News/categories_card-divider.png" alt="icon" class="card-meta-divider">
+                        <div class="card-meta-date">January 14, 2020</div>
+                        <img src="../../img/News/categories_card-divider.png" alt="icon" class="card-meta-divider">
+                        <img src="../../img/News/chat-icon.svg" alt="icon" class="card-meta-icon">
+                        <p class="card-meta-comments">No comments</p>
+                    </div>
+                    <p class="categories__card-text">
+                        Dignissim sed enim, eleifend morbi condimentum. Congue id quis vulputate dignissim eget. Ac ullamcorper nunc habitasse enim interdum platea...
+                    </p>
+                </div>
+            </div>
+
+            <div class="categories__card">
+                <img src="../../img/News/categories_card-img6.png" alt="img" class="categories__card-img">
+                <div class="categories__card-description">
+                    <h3 class="categories__card-heading">
+                        Types of Flooring Materials
+                    </h3>
+                    <div class="categories__card-meta">
+                        <p class="card-meta-category">Company News</p>
+                        <img src="../../img/News/categories_card-divider.png" alt="icon" class="card-meta-divider">
+                        <div class="card-meta-date">December 1, 2019</div>
+                        <img src="../../img/News/categories_card-divider.png" alt="icon" class="card-meta-divider">
+                        <img src="../../img/News/chat-icon.svg" alt="icon" class="card-meta-icon">
+                        <p class="card-meta-comments">No comments</p>
+                    </div>
+                    <p class="categories__card-text">
+                        Maecenas donec lacinia nunc, quam sit magnis mauris. Neque bibendum et mauris, aenean. Vel arcu amet in sem parturient  integer duis et nulla...
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pages">
+            <p class="page__number">1</p>
+            <p class="page__number">2</p>
+            <p class="page__number">3</p>
+            <p class="page__number">4</p>
+            <img src="../../img/News/categories_arrow-right.svg" alt="icon" class="pages__arrow-right">
+        </div>
+
+    </section>
+
+    <section class="application">
+    
+        <fieldset class="app__form">
+
+            <div class="app__form-container">
+
+                <h2 class="app__form-title">A quick way to discuss details</h2>
+
+                <div class="app__form-input">
+                    <p class="app__form-input-label">Name*</p>
+                    <input type="text" class="form__input" placeholder="Your name">
+                </div>
+
+                <div class="app__form-input">
+                    <p class="app__form-input-label">Phone*</p>
+                    <input type="text" class="form__input" placeholder="Your phone number">
+                </div>
+
+                <div class="app__form-input">
+                    <p class="app__form-input-label">Email</p>
+                    <input type="text" class="form__input" placeholder="Your working email">
+                </div>
+
+                <div class="app__form-input">
+                    <p class="app__form-input-label">Message*</p>
+                    <input type="text" class="form__input" placeholder="Your message">
+                </div>
+
+                <div class="checkbox__form">
+                    <input type="checkbox" class="checkbox">
+                    <p class="checkbox__span">
+                        I agree to receive communications from Createx Construction Bureau.
+                    </p>
+                </div>
+                
+                <button class="submit-btn">Send request</button>
+
+            </div>
+
+        </fieldset>
+
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer__container">
+
+            <div class="block1">
+
+                <div class="block1__mission">
+                    <div class="block1__mission-logo">
+                        <img src="../../img/footer_logo.svg" alt="logo" class="mission-logo">
+                        <ul class="block1__mission-socials">
+                            <li class="social-icon">
+                                <img src="../../img/footer_WhatsApp-icon.svg" alt="icon" class="social-icon-whatsapp">
+                            </li>
+                            <li class="social-icon">
+                                <img src="../../img/footer_Messenger-icon.svg" alt="icon" class="social-icon-messenger">
+                            </li>
+                            <li class="social-icon">
+                                <img src="../../img/footer_Facebook-icon.svg" alt="icon" class="social-icon-facebook">
+                            </li>
+                            <li class="social-icon">
+                                <img src="../../img/footer_Twitter-icon.svg" alt="icon" class="social-icon-twitter">
+                            </li>
+                            <li class="social-icon">
+                                <img src="../../img/footer_Youtube-icon.svg" alt="icon" class="social-icon-twitter">
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="block1__mission-text">
+                        Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are proud to offer you quality construction and exemplary service. Our mission is to set the highest standards for construction sphere.
+                    </p>
+                </div>
+
+                <div class="block1__subsribe">
+                    <p class="subscribe__label">Let's stay in touch</p>
+                    <div class="subscribe__block">
+                        <input type="text" class="subscibe__form" placeholder="Your email address">
+                        <button class="subscribe__btn">subscribe</button>
+                    </div>
+                    <span class="subscribe__comment">
+                        *Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="block2">
+
+                <div class="address">
+                    <p class="heading">head office</p>
+                    <p class="line"><span>Address: </span>8502 Preston Rd. Inglewood, New York</p>
+                    <p class="line"><span>Call: </span>(405) 555-0128</p>
+                    <p class="line"><span>Email: </span>hello@createx.com</p>
+                </div>
+
+                <div class="contacts">
+                    <p class="heading">who we are</p>
+                    <ul class="lines">
+                        <li class="line">About us</li>
+                        <li class="line">Available Position</li>
+                        <li class="line">Contacts</li>
+                    </ul>
+                </div>
+
+                <div class="experience">
+                    <p class="heading">our experience</p>
+                    <ul class="lines">
+                        <li class="line">Services</li>
+                        <li class="line">Work</li>
+                        <li class="line">News</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="block3">
+
+                <div class="copyright">
+                    <p class="copyright-span">© All rights reserved. Made with <span><img src="../../img/footer_heart-icon.svg" alt="icon" class="heart-icon"></span> by Createx Studio </p>
+                </div>
+
+                <div class="navigation-btn">
+                    <p class="navigation-span">GO TO TOP</p>
+                    <img src="../../img/footer_up-btn.svg" alt="icon" class="up-btn">
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
     
 </body>
 </html>
