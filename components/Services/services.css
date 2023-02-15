@@ -4,38 +4,43 @@ body {
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     color: #1E212C;
+    margin: 0 auto;
 }
 
 /* Header */
 
 .header {
-    position: absolute;
-    height: 52px;
-    margin: 20px 345px 80px;
-    z-index: 10;
+    padding-top: 20px;
+    margin: 0 345px 80px;
 }
 .header__navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header__navbar-logo {
+.header__navbar-logo-link {
     margin-right: 60px;
+}
+.header__navbar-logo {
+    cursor: pointer;
 }
 .header__navbar-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 447px;
+    min-width: 447px;
     margin-right: 172px;
 }
 .navbar-menu-item {
     font-weight: 700;
     font-size: 16px;
-    line-height: 160%; /* 22px */
+    line-height: 160%;
     color: #424551;
     margin-right: 40px;
     cursor: pointer;
+}
+.navbar-menu-item:hover {
+    color: #FF5A30;
 }
 .navbar-menu-item:last-child {
     margin-right: 0;
@@ -81,32 +86,39 @@ body {
 }
 #navbar-call-email {
     width: 210px;
+    cursor: pointer;
+}
+
+/* Main */
+
+main {
+    margin-top: -152px;
+    z-index: -10;
 }
 
 /* Intro */
 
 .intro {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: right;
+
     width: 1920px;
     height: 600px;
-    background-image: url('../../img/Services/intro_background.svg');
-    background-size: cover;
+
+    background-image: url('/img/Services/intro_background.png');
     background-repeat: no-repeat;
-    /* padding-top: 80px; */
+    margin-bottom: 120px;
 }
 .intro__container {
-    margin: 80px 345px 120px;
+    width: 600px;
+    height: 269px;
+    margin: 152px 345px 176px;
 }
 .navigation__links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 145px;
-    margin-top: 80px;
+    align-items: left;
     margin-bottom: 40px;
 }
 .navigation__link {
@@ -123,6 +135,7 @@ body {
     font-size: 14px;
     line-height: 150%;
     color: #9A9CA5;
+    margin: 0 8px 0;
 }
 .intro__title {
     width: 600px;
@@ -149,7 +162,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 120px 345px 180px;
+    height: 2040px;
+    margin: 120px 345px 181px;
 }
 .cards__background1 {
     position: absolute;
@@ -166,20 +180,50 @@ body {
     display: flex;
     margin: 0 345px 120px;
     width: 1230px;
+    height: 420px;
     gap: 80px;
 }
-.card__info {
+.card:last-child {
+    margin-bottom: 0;
+}
+.card__info-img {
+    width: 575px;
+    height: 420px;
+}
+.card__info-construction {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: right;
+    width: 575px;
+    height: 268px;
+    margin: 76px 0 0;
+}
+.card__info-design {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: right;
+    width: 575px;
+    height: 268px;
+    margin: 63px 0 0;
+}
+.card__info-project,
+.card__info-repairs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: right;
+    width: 575px;
+    height: 242px;
+    margin: 89px 30px 89px 0;
 }
 .card__info-title {
     font-weight: 700;
     font-size: 32px;
     line-height: 150%;
     color: #1E212C;
-    margin: 76px 0 24px;
+    margin-bottom: 24px;
 }
 .card__info-text {
     font-weight: 400;
@@ -188,13 +232,11 @@ body {
     color: #787A80;
     margin-bottom: 48px;
 }
-.learn-more-btn {
+.cards__learn-more-btn {
     width: 160px;
     height: 44px;
     border: 1px solid #FF5A30;
     border-radius: 4px;
-    margin-bottom: 67px;
-
     text-align: center;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -202,6 +244,11 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 44px;
+    cursor: pointer;
+}
+.cards__learn-more-btn:hover {
+    background: #FF5A30;
+    color: #fff;
 }
 
 
@@ -213,7 +260,7 @@ body {
     align-items: center;
     width: 1920px;
     height: 826px;
-    background-image: url('../../img/application_background.png');
+    background-image: url('../../img/Services/application_background.png');
     background-repeat: no-repeat;
     background-color: #fff;
     margin-bottom: 0;
@@ -246,7 +293,7 @@ body {
     align-items: center;
     width: 415px;
     height: 560px;
-    margin: 58px 40px 48px;
+    margin: 47px 40px;
 }
 .app__form-input {
     display: flex;
@@ -261,6 +308,13 @@ body {
     border-radius: 4px;
     background: #F4F5F7;
     padding: 11px 16px 12px;
+}
+.form__input.message {
+    height: 66px;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    background: #F4F5F7;
+    padding: 11px 16px 34px;
 }
 .app__form-input-label {
     font-weight: 400;
@@ -288,17 +342,22 @@ body {
     line-height: 150%;
     color: #424551;
 }
-.submit-btn {
+.application__submit-btn {
     width: 174px;
     height: 44px;
+    bottom: 48px;
+    background: #FF5A30;
+    border-radius: 4px;
     font-weight: 700;
     font-size: 14px;
     line-height: 44px;
     text-align: center;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    background: #FF5A30;
-    border-radius: 4px;
+    color: #FFFFFF;
+}
+.application__submit-btn:hover {
+    background: rgb(255, 90, 48, 0.5);
 }
 
 /* Footer */
@@ -320,7 +379,6 @@ body {
 .block1 {
     display: flex;
     margin-bottom: 49px;
-    /* border: 1px dotted #8e8e8e; */
 }
 .block1__mission {
     display: flex;
@@ -330,10 +388,10 @@ body {
 }
 .block1__mission-logo {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     margin-right: 242px;
     margin-bottom: 24px;
+    cursor: pointer;
 }
 .mission-logo {
     margin-right: 60px;
@@ -345,7 +403,14 @@ body {
     width: 184px;
 }
 .social-icon {
-    margin-right: 18px;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+}
+.social-icon:hover {
+    transform: scale(1.5);
 }
 .social-icon:last-child {
     margin-right: 0;
@@ -409,7 +474,9 @@ opacity: 0.6;
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
+.subscribe__btn:hover {
+    background: rgb(255, 90, 48, 0.5);
+}
 
 .block2 {
     height: 123px;
@@ -417,8 +484,8 @@ opacity: 0.6;
     margin-bottom: 60px;
 }
 .address {
-    width: 354px;
-    margin-right: 120px;
+    width: 352px;
+    margin-right: 124px;
 }
 .heading {
     font-weight: 700;
@@ -483,6 +550,7 @@ opacity: 0.6;
     width: 129px;
     height: 40px;
     margin-top: -22px;
+    cursor: pointer;
 }
 .navigation-span {
     font-weight: 400;

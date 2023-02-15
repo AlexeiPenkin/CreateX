@@ -4,16 +4,14 @@ body {
     font-family: "Ubuntu", sans-serif;
     font-weight: 400;
     color: #1E212C;
-    margin: 0;
+    margin: 0 auto;
 }
 
 /* Header */
 
 .header {
-    position: absolute;
-    height: 52px;
-    margin: 20px 345px 80px;
-    z-index: 10;
+    padding-top: 20px;
+    margin: 0 345px 80px;
 }
 .header__navbar {
     display: flex;
@@ -22,21 +20,25 @@ body {
 }
 .header__navbar-logo {
     margin-right: 60px;
+    cursor: pointer;
 }
 .header__navbar-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 447px;
+    min-width: 447px;
     margin-right: 172px;
 }
 .navbar-menu-item {
     font-weight: 700;
     font-size: 16px;
-    line-height: 160%; /* 22px */
+    line-height: 160%;
     color: #424551;
     margin-right: 40px;
     cursor: pointer;
+}
+.navbar-menu-item:hover {
+    color: #FF5A30;
 }
 .navbar-menu-item:last-child {
     margin-right: 0;
@@ -82,6 +84,14 @@ body {
 }
 #navbar-call-email {
     width: 210px;
+    cursor: pointer;
+}
+
+/* Main */
+
+main {
+    margin-top: -152px;
+    z-index: -10;
 }
 
 /* Intro */
@@ -94,19 +104,18 @@ body {
     align-items: right;
     width: 1920px;
     height: 970px;
-    /* margin-top: 48px; */
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 .slider__controls {
     position: absolute;
-    top: 606px;
+    top: 570px;
     left: 377px;
     right: 377px;
-    width: 1166px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    width: 1166px;
 }
 .intro__background {
     position: absolute;
@@ -114,7 +123,7 @@ body {
 }
 .intro__container {
     height: 922px;
-    margin: 80px 345px 0;
+    margin: 70px 345px 0;
 }
 .navigation__links {
     display: flex;
@@ -157,6 +166,7 @@ body {
     width: 1230px;
     height: 500px;
 }
+
 .thumbnails {
     display: flex;
     width: 1230px;
@@ -176,13 +186,14 @@ body {
 
 .goal {
     display: flex;
+    width: 1230px;
     height: 316px;
     margin: 0 345px 120px;
 }
 .goal__description {
     width: 600px;
     height: 235px;
-    margin-right: 135px;
+    /* margin-right: 135px; */
 }
 .goal__description-title {
     font-weight: 700;
@@ -191,6 +202,7 @@ body {
     display: flex;
     align-items: center;
     color: #1E212C;
+    margin-top: 38px;
     margin-bottom: 40px;
 }
 .goal__description-text {
@@ -200,6 +212,7 @@ body {
     display: flex;
     align-items: center;
     color: #424551;
+    margin-bottom: 10px;
 }
 .goal__details {
     display: flex;
@@ -207,7 +220,9 @@ body {
     height: 316px;
     box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
     border-radius: 4px;
+    margin-left: 135px;
 }
+
 .goal__details-headings {
     display: flex;
     flex-direction: column;
@@ -262,7 +277,7 @@ body {
     font-weight: 700;
     font-size: 46px;
     line-height: 130%;
-    text-align: center;
+    text-align: left;
     color: #1E212C;
     margin-bottom: 60px;
 }
@@ -288,18 +303,44 @@ body {
 
 /* Similar projects */
 
-.cards {
+.similar-projects {
+    position: relative;
     width: 1230px;
-    margin: 180px 345px 120px;
+    margin: 178px 345px 120px;
 }
-.cards__container {
+.similar-projects__title {
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #1E212C;
+    margin-bottom: 60px;
+}
+.similar-projects__slider {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    display: flex;
+    width: 84px;
+    height: 48px;
+}
+.slider__arrow-prv {
+    width: 48px;
+    height: 48px;
+}
+.slider__arrow-next {
+    width: 48px;
+    height: 48px;
+}
+.similar-projects__container {
     display: grid;
     grid-template-columns: repeat(3, 390px);
     grid-template-rows: 440px;
     gap: 30px;
     margin-bottom: 80px;
 }
-.card {
+.project__card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -308,10 +349,10 @@ body {
     box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
     border-radius: 4px;
 }
-.card__img {
+.project__card-img {
     margin-bottom: 16px;
 }
-.card__title {
+.project__card-title {
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
@@ -319,7 +360,7 @@ body {
     color: #1E212C;
     margin-bottom: 4px;
 }
-.card__subtitle {
+.project__card-subtitle {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
@@ -327,14 +368,14 @@ body {
     color: #787A80;
 }
 
-.related-projects__learn-more {
+.similar-projects__learn-more {
     display: flex;
     justify-content: space-between;
     width: 547px;
     margin-left: 341px;
     margin-bottom: 0;
 }
-.related-projects__learn-more-text {
+.similar-projects__learn-more-text {
     width: 283px;
     font-weight: 700;
     font-size: 28px;
@@ -343,12 +384,22 @@ body {
     align-items: center;
     color: #1E212C;
 }
-#related-projects__submit-btn {
+#similar-projects__submit-btn {
+    font-family: 'Ubuntu';
     width: 224px;
     height: 52px;
     background: #FF5A30;
     border-radius: 4px;
-    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+#similar-projects__submit-btn:hover {
+    background: rgb(255, 90, 48, 0.5);
 }
 
 /* Application */
@@ -359,7 +410,7 @@ body {
     align-items: center;
     width: 1920px;
     height: 826px;
-    background-image: url('../../img/application_background.png');
+    background-image: url('../../img/Work/application_background.png');
     background-repeat: no-repeat;
     background-color: #fff;
     margin-bottom: 0;
@@ -392,7 +443,7 @@ body {
     align-items: center;
     width: 415px;
     height: 560px;
-    margin: 58px 40px 48px;
+    margin: 48px 40px 48px;
 }
 .app__form-input {
     display: flex;
@@ -407,6 +458,13 @@ body {
     border-radius: 4px;
     background: #F4F5F7;
     padding: 11px 16px 12px;
+}
+.form__input.message {
+    height: 66px;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    background: #F4F5F7;
+    padding: 11px 16px 34px;
 }
 .app__form-input-label {
     font-weight: 400;
@@ -434,15 +492,23 @@ body {
     line-height: 150%;
     color: #424551;
 }
-.submit-btn {
+.application__submit-btn {
     width: 174px;
     height: 44px;
+    bottom: 48px;
+    background: #FF5A30;
+    border-radius: 4px;
     font-weight: 700;
     font-size: 14px;
     line-height: 44px;
     text-align: center;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.application__submit-btn:hover {
+    background: rgb(255, 90, 48, 0.5);
 }
 
 /* Footer */
@@ -464,7 +530,6 @@ body {
 .block1 {
     display: flex;
     margin-bottom: 49px;
-    /* border: 1px dotted #8e8e8e; */
 }
 .block1__mission {
     display: flex;
@@ -474,10 +539,11 @@ body {
 }
 .block1__mission-logo {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
-    margin-right: 242px;
+    width: 386px;
+    margin-right: 349px;
     margin-bottom: 24px;
+    cursor: pointer;
 }
 .mission-logo {
     margin-right: 60px;
@@ -489,7 +555,14 @@ body {
     width: 184px;
 }
 .social-icon {
-    margin-right: 18px;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+}
+.social-icon:hover {
+    transform: scale(1.5);
 }
 .social-icon:last-child {
     margin-right: 0;
@@ -553,6 +626,9 @@ opacity: 0.6;
     text-transform: uppercase;
     color: #FFFFFF;
 }
+.subscribe__btn:hover {
+    background: rgb(255, 90, 48, 0.5);
+}
 
 
 .block2 {
@@ -562,7 +638,7 @@ opacity: 0.6;
 }
 .address {
     width: 352px;
-    margin-right: 120px;
+    margin-right: 124px;
 }
 .heading {
     font-weight: 700;
@@ -593,7 +669,6 @@ opacity: 0.6;
 
 .experience {
     width: 152px;
-    /* margin-right: 690px; */
 }
 
 
@@ -627,7 +702,6 @@ opacity: 0.6;
     width: 129px;
     height: 40px;
     margin-top: -22px;
-    /* border: 1px dotted #8e8e8e; */
 }
 .navigation-span {
     font-weight: 400;

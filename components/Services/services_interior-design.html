@@ -6,487 +6,499 @@
         <link rel="stylesheet" href="./services_interior-design.css">
         <link rel="stylesheet" href="../../css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet"> 
         <title>Services - Interior Design</title>
     </head>
 <body>
 
     <header class="header">
         <nav class="header__navbar">
-            <img src="../../img/header_logo.svg" alt="logo" class="header__navbar-logo">
-            <ul class="header__navbar-menu">
-                <li class="navbar-menu-item">About Us</li>
-                <li class="navbar-menu-item">Services</li>
-                <li class="navbar-menu-item">Work</li>
-                <li class="navbar-menu-item">News</li>
-                <li class="navbar-menu-item">Contacts</li>
-            </ul>
+
+            <a href="/index.html" class="header__navbar-logo-link">
+                <img src="/img/About/header_logo.svg" alt="logo" class="header__navbar-logo">
+            </a>
+
+            <nav class="header__navbar-menu">
+                <a class="navbar-menu-item" href="/components/About/about.html">About Us</a>
+                <a class="navbar-menu-item" href="/components/Services/services.html">Services</a>
+                <a class="navbar-menu-item" href="/components/Work/work.html">Work</a>
+                <a class="navbar-menu-item" href="/components/News//news.html">News</a>
+                <a class="navbar-menu-item" href="/components/Contacts/contacts.html">Contacts</a>
+            </nav>
+
             <div class="navbar-call">
-
                 <div class="navbar-call-block" id="navbar-call-phone">
-
-                    <img src="../../img/header_mob.phone-icon.svg" alt="icon" class="navbar-call-icon">
-
+                    <img src="/img/Services/header_mob.phone-icon.svg" alt="icon" class="navbar-call-icon">
                     <div class="navbar__contact">
                         <div class="navbar-call-label">Call us</div>
                         <div class="navbar-call-contact">(405) 555-0128</div>
                     </div>
-
                 </div>
 
                 <div class="navbar-call-block" id="navbar-call-email">
 
-                    <img src="../../img/header_chat-icon.svg" alt="icon" class="navbar-call-icon">
-
+                    <img src="/img/Services/header_chat-icon.svg" alt="icon" class="navbar-call-icon">
                     <div class="navbar__contact">
                         <div class="navbar-call-label">Talk to us</div>
                         <div class="navbar-call-contact">hello@createx.com</div>
                     </div>
-
                 </div>
-
             </div>
+
         </nav>
     </header>
 
-    <section class="intro">
+    <main class="main">
 
-        <div class="intro__container">
+        <section class="intro">
 
-            <nav class="navigation__links">
-                <a href="#" class="navigation__link" id="visited">Homepage</a>
-                <p class="navigation__links_divider">/</p>
-                <a href="#" class="navigation__link" id="visited">Services</a>
-                <p class="navigation__links_divider">/</p>
-                <a href="#" class="navigation__link">Services</a>
-            </nav>
+            <div class="intro__container">
 
-            <h1 class="intro__title">INTERIOR DESIGN</h1>
+                <nav class="navigation__links">
+                    <a href="/index.html" class="navigation__link" id="visited">Homepage</a>
+                    <p class="navigation__links_divider">/</p>
+                    <a href="/components/Services/services.html" class="navigation__link" id="visited">Services</a>
+                    <p class="navigation__links_divider">/</p>
+                    <a href="#" class="navigation__link">Interior Design</a>
+                </nav>
 
-            <p class="intro__text">
-                Dui augue nec mi mi. Ut ac lectus donec fames pellentesque. Laoreet aenean vulputate elementum blandit amet.
-            </p>
+                <h1 class="intro__title">INTERIOR DESIGN</h1>
 
-        </div>
+                <p class="intro__text">
+                    Dui augue nec mi mi. Ut ac lectus donec fames pellentesque. Laoreet aenean vulputate elementum blandit amet.
+                </p>
 
-    </section>
+            </div>
 
-    <section class="cards">
-        <div class="card">
-            <img src="../../img/Services/int-design_img.png" alt="img" class="card__info-img">
-            <div class="card__info">
+        </section>
 
-                <h2 class="card__info-title">We offer</h2>
+        <section class="offer__cards">
+            <div class="offer__card">
+                <img src="../../img/Services/int-design_img.png" alt="img" class="offer__card-img">
+                <div class="offer__card-info">
 
-                <div class="card__design-options">
-                    <img src="../../img/Services/cards_minus.png" alt="icon" class="folding-sign" id="minus">
+                    <h2 class="offer__card-title">We offer</h2>
 
-                    <div class="card__info-description">
-                        <h3 class="card__info-heading">Interior design of apartments</h3>
-                        <p class="card__info-text">
-                            Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim purus. Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis.
-                        </p>
+                    <div class="offer__card-options">
+                        <img src="../../img/Services/cards_minus.png" alt="icon" class="folding-sign" id="minus">
+
+                        <div class="offer__card-description">
+                            <h3 class="offer__card-heading">Interior design of apartments</h3>
+                            <p class="offer__card-text">
+                                Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim purus. Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="offer__card-options">
+                        <img src="../../img/Services/cards_plus.png" alt="icon" class="folding-sign">
+
+                        <div class="offer__card-description">
+                            <h3 class="offer__card-heading">Interior design of private houses</h3>
+                            <p class="offer__card-text">
+                                <!-- Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim purus. Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis. -->
+                            </p>
+                        </div>
                     </div>
                 </div>
-
-                <div class="card__design-options">
-                    <img src="../../img/Services/cards_plus.png" alt="icon" class="folding-sign">
-
-                    <div class="card__info-description">
-                        <h3 class="card__info-heading">Interior design of apartments</h3>
-                        <p class="card__info-text">
-                            <!-- Adipiscing nunc arcu enim elit mattis eu placerat proin. Imperdiet elementum faucibus dignissim purus. Fusce parturient diam magna ullamcorper morbi semper massa ac facilisis. -->
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="workflow">
-
-        <h2 class="workflow__title">That’s how we do it</h2>
-
-        <div class="workflow__stages">
-
-            <div class="workflow__stage">
-                <div class="stage__number">
-                    <p class="workflow__stage-span">01</p>
-                    <p class="stage-span-line"></p>
-                </div>
-                <h3 class="workflow__stage-heading">Work Estimate</h3>
-                <p class="workflow__stage-text">
-                    Culpa nostrud commodo ea consequat aliquip reprehenderit.
-                </p>
-            </div>
-
-            <div class="workflow__stage">
-                <div class="stage__number">
-                    <p class="workflow__stage-span">02</p>
-                    <p class="stage-span-line"></p>
-                </div>
-                <h3 class="workflow__stage-heading">Contract</h3>
-                <p class="workflow__stage-text">
-                    Laoreet ultrices curabitur luctus quisque consequat. Leo lorem velit imperdiet auctor et tempor.
-                </p>
-            </div>
-
-            <div class="workflow__stage">
-                <div class="stage__number">
-                    <p class="workflow__stage-span">03</p>
-                    <p class="stage-span-line"></p>
-                </div>
-                <h3 class="workflow__stage-heading">Mobilization </h3>
-                <p class="workflow__stage-text">
-                    Odio massa scelerisque purus arcu sed velit eleifend cursus leo.
-                </p>
-            </div>
-
-            <div class="workflow__stage">
-                <div class="stage__number">
-                    <p class="workflow__stage-span">04</p>
-                    <p class="stage-span-line"></p>
-                </div>
-                <h3 class="workflow__stage-heading">Construction Work</h3>
-                <p class="workflow__stage-text">
-                    Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="benefits">
-        <h2 class="benefits__title">Our benefits</h2>
-        <h3 class="benefits__subtitle">
-            Our mission is to set the highest standards for construction sphere.
-        </h3>
-
-        <div class="benefits__boxes">
-            <div class="benefits__box">
-                <img src="../../img/Services/benefits_icon1.png" alt="icon" class="benefits__box-icon">
-                <h4 class="benefits__box-title">Quality</h4>
-                <p class="benefits__box-text">
-                    Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
-                </p>
-            </div>
-
-            <img src="../../img/Services/benefits_divider.png" alt="line" class="benefits__divider">
-
-            <div class="benefits__box">
-                <img src="../../img/Services/benefits_icon2.png" alt="icon" class="benefits__box-icon">
-                <h4 class="benefits__box-title">Safety</h4>
-                <p class="benefits__box-text">
-                    Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.
-                </p>
-            </div>
-
-            <img src="../../img/Services/benefits_divider.png" alt="line" class="benefits__divider">
-
-            <div class="benefits__box">
-                <img src="../../img/Services/benefits_icon3.png" alt="icon" class="benefits__box-icon">
-                <h4 class="benefits__box-title">Comfort</h4>
-                <p class="benefits__box-text">
-                    Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.
-                </p>
-            </div>
-        </div>
-
-        <button class="benefits__submit-btn">Discuss a project</button>
-
-    </section>
-
-    <section class="related-projects">
-    
-        <div class="related-projects__container">
-
-            <div class="title__block">
-
-                <h2 class="related-projects__title">Related projects</h2>
-
-                <div class="related-projects__slider">
-                    <img src="../../img/Services/rel.projects_arrow-left.png" alt="icon" class="slider-arrow-left">
-                    <img src="../../img/Services/rel.projects_arrow-right.png" alt="icon" class="slider-arrow-right">
-                </div>
-
-            </div>
-
-            <div class="related-projects__cards">
-
-                <div class="related-projects__card">
-                    <img src="../../img/Services/rel.projects_img1.png" alt="picture" class="card__img">
-                    <h3 class="card__title">Kids Bedroom With Decorations</h3>
-                    <span class="card_span">Apartments & flats</span>
-                </div>
-
-                <div class="related-projects__card">
-                    <img src="../../img/Services/rel.projects_img2.png" alt="picture" class="card__img">
-                    <h3 class="card__title">Modern Double Bedroom</h3>
-                    <span class="card_span">Apartments & flats</span>
-                    <button class="card__btn">View Project</button>
-                </div>
-
-                <div class="related-projects__card">
-                    <img src="../../img/Services/rel.projects_img3.png" alt="picture" class="card__img">
-                    <h3 class="card__title">Scandinavian Style Interior</h3>
-                    <span class="card_span">Private houses</span>
-                </div>
-
-            </div>
-
-            <div class="related-projects__learn-more">
-                <p class="related-projects__learn-more-text">Explore all our works</p>
-                <button class="submit-btn" id="related-projects__submit-btn">View portfolio</button>
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <div class="background">
-
-        <section class="pricing">
-            <div class="pricing__container">
-                <h2 class="pricing__title">Pricing</h2>
-                <p class="pricing__text">
-                    We offer you three categories of construction.
-                </p>
-                <table class="pricing__tariffs" cellspacing="0" cellpadding="0">
-                    <tr class="pricing__tariffs-headings">
-                        <th></th>
-                        <th>basic</th>
-                        <th>standard</th>
-                        <th>business</th>
-                    </tr>
-                    <tr class="pricing__tariffs-subheadings">
-                        <th class="tariffs-subheadings-head">Items</th>
-                        <th class="pricing__tariffs-subheading">$20 per m2</th>
-                        <th class="pricing__tariffs-subheading">$30 per m2</th>
-                        <th class="pricing__tariffs-subheading">$40 per m2</th>
-                    </tr>
-    
-                    <tr class="pricing__tariffs-line" id="tariffs-line1">
-                        <td class="tariffs-line-heading">Installation plan</td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                    </tr>
-                    <tr class="pricing__tariffs-line" id="tariffs-line2">
-                        <td class="tariffs-line-heading">Planning solutions (2-3 options)</td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                    </tr>
-                    <tr class="pricing__tariffs-line" id="tariffs-line3">
-                        <td class="tariffs-line-heading">Lighting plan</td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                    </tr>
-                    <tr class="pricing__tariffs-line" id="tariffs-line4">
-                        <td class="tariffs-line-heading">Flooring plan</td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                    </tr>
-                    <tr class="pricing__tariffs-line" id="tariffs-line5">
-                        <td class="tariffs-line-heading">Heating floor laying scheme</td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                    </tr>
-                    <tr class="pricing__tariffs-line" id="tariffs-line6">
-                        <td class="tariffs-line-heading">Air conditioner zones layout</td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                    </tr>
-                    <tr class="pricing__tariffs-line" id="tariffs-line7">
-                        <td class="tariffs-line-heading">3D visualization of all rooms</td>
-                        <td>simplified</td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                    </tr>
-                    <tr class="pricing__tariffs-line" id="tariffs-line8">
-                        <td class="tariffs-line-heading">Visualization of each room (3-4 angles)</td>
-                        <td></td>
-                        <td></td>
-                        <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
-                    </tr>
-                    <tr class="pricing__tariffs-line" id="tariffs-line9">
-                        <td class="tariffs-line-heading">Terms</td>
-                        <td>10 days</td>
-                        <td>20 days</td>
-                        <td>30 days</td>
-                    </tr>
-    
-                    <tr class="pricing__buttons" height="90px">
-                        <td></td>
-                        <td class="pricing__button" >
-                            <button class="pricing__submit-btn">send request</button>
-                        </td>
-                        <td class="pricing__button">
-                            <button class="pricing__submit-btn">send request</button>
-                        </td>
-                        <td class="pricing__button">
-                            <button class="pricing__submit-btn">send request</button>
-                        </td>
-                    </tr>
-                </table>
             </div>
         </section>
 
-        <section class="clients">
-            <div class="clients__container">
-                <h2 class="clients__title">Supported by 12+ partners</h2>
-                <div class="clients__block">
-                    <img src="../../img/clients-logo1.svg" alt="icon" class="client__icon">
-                    <img src="../../img/clients-logo2.svg" alt="icon" class="client__icon">
-                    <img src="../../img/clients-logo3.svg" alt="icon" class="client__icon">
-                    <img src="../../img/clients-logo4.svg" alt="icon" class="client__icon">
-                    <img src="../../img/clients-logo5.svg" alt="icon" class="client__icon">
-                    <img src="../../img/clients-logo6.svg" alt="icon" class="client__icon">
-                </div>
-            </div>
-        </section>
-    </div>
+        <section class="workflow">
 
+            <h2 class="workflow__title">That’s how we do it</h2>
 
-    <section class="application">
-    
-        <fieldset class="app__form">
+            <div class="workflow__stages">
 
-            <div class="app__form-container">
-
-                <h2 class="app__form-title">A quick way to discuss details</h2>
-
-                <div class="app__form-input">
-                    <p class="app__form-input-label">Name*</p>
-                    <input type="text" class="form__input" placeholder="Your name">
-                </div>
-
-                <div class="app__form-input">
-                    <p class="app__form-input-label">Phone*</p>
-                    <input type="text" class="form__input" placeholder="Your phone number">
-                </div>
-
-                <div class="app__form-input">
-                    <p class="app__form-input-label">Email</p>
-                    <input type="text" class="form__input" placeholder="Your working email">
-                </div>
-
-                <div class="app__form-input">
-                    <p class="app__form-input-label">Message*</p>
-                    <input type="text" class="form__input" placeholder="Your message">
-                </div>
-
-                <div class="checkbox__form">
-                    <input type="checkbox" class="checkbox">
-                    <p class="checkbox__span">
-                        I agree to receive communications from Createx Construction Bureau.
+                <div class="workflow__stage">
+                    <div class="stage__number">
+                        <p class="workflow__stage-span">01</p>
+                        <p class="stage-span-line"></p>
+                    </div>
+                    <h3 class="workflow__stage-heading">Work Estimate</h3>
+                    <p class="workflow__stage-text">
+                        Culpa nostrud commodo ea consequat aliquip reprehenderit.
                     </p>
                 </div>
-                
-                <button class="submit-btn">Send request</button>
+
+                <div class="workflow__stage">
+                    <div class="stage__number">
+                        <p class="workflow__stage-span">02</p>
+                        <p class="stage-span-line"></p>
+                    </div>
+                    <h3 class="workflow__stage-heading">Contract</h3>
+                    <p class="workflow__stage-text">
+                        Laoreet ultrices curabitur luctus quisque consequat. Leo lorem velit imperdiet auctor et tempor.
+                    </p>
+                </div>
+
+                <div class="workflow__stage">
+                    <div class="stage__number">
+                        <p class="workflow__stage-span">03</p>
+                        <!-- <img src="../../img/Services/IntDesign_workflow-step3.svg" alt="icon" class="workflow__stage-span"> -->
+                        <p class="stage-span-line"></p>
+                    </div>
+                    <h3 class="workflow__stage-heading">Mobilization </h3>
+                    <p class="workflow__stage-text">
+                        Odio massa scelerisque purus arcu sed velit eleifend cursus leo.
+                    </p>
+                </div>
+
+                <div class="workflow__stage">
+                    <div class="stage__number">
+                        <p class="workflow__stage-span">04</p>
+                        <p class="stage-span-line"></p>
+                    </div>
+                    <h3 class="workflow__stage-heading">Construction Work</h3>
+                    <p class="workflow__stage-text">
+                        Adipisicing esse aliqua aliquip qui amet. Aute eiusmod dolore dolore et ad et veniam ad deserunt.
+                    </p>
+                </div>
 
             </div>
 
-        </fieldset>
+        </section>
 
-    </section>
+        <section class="benefits">
+            <h2 class="benefits__title">Our benefits</h2>
+            <h3 class="benefits__subtitle">
+                Our mission is to set the highest standards for construction sphere.
+            </h3>
 
-    <footer class="footer">
+            <div class="benefits__boxes">
+                <div class="benefits__box">
+                    <img src="../../img/Services/benefits_icon1.png" alt="icon" class="benefits__box-icon">
+                    <h4 class="benefits__box-title">Quality</h4>
+                    <p class="benefits__box-text">
+                        Culpa nostrud commodo ea consequat aliquip reprehenderit. Veniam velit nostrud aliquip sunt.
+                    </p>
+                </div>
 
-        <div class="footer__container">
+                <img src="../../img/Services/benefits_divider.png" alt="line" class="benefits__divider">
 
-            <div class="block1">
+                <div class="benefits__box">
+                    <img src="../../img/Services/benefits_icon2.png" alt="icon" class="benefits__box-icon">
+                    <h4 class="benefits__box-title">Safety</h4>
+                    <p class="benefits__box-text">
+                        Anim reprehenderit sint voluptate exercitation adipisicing laborum adipisicing. Minim empor est ea.
+                    </p>
+                </div>
 
-                <div class="block1__mission">
-                    <div class="block1__mission-logo">
-                        <img src="../../img/footer_logo.svg" alt="logo" class="mission-logo">
-                        <ul class="block1__mission-socials">
-                            <li class="social-icon">
-                                <img src="./img/footer_WhatsApp-icon.svg" alt="icon" class="social-icon-whatsapp">
-                            </li>
-                            <li class="social-icon">
-                                <img src="./img/footer_Messenger-icon.svg" alt="icon" class="social-icon-messenger">
-                            </li>
-                            <li class="social-icon">
-                                <img src="./img/footer_Facebook-icon.svg" alt="icon" class="social-icon-facebook">
-                            </li>
-                            <li class="social-icon">
-                                <img src="./img/footer_Twitter-icon.svg" alt="icon" class="social-icon-twitter">
-                            </li>
-                            <li class="social-icon">
-                                <img src="./img/footer_Youtube-icon.svg" alt="icon" class="social-icon-twitter">
-                            </li>
+                <img src="../../img/Services/benefits_divider.png" alt="line" class="benefits__divider">
+
+                <div class="benefits__box">
+                    <img src="../../img/Services/benefits_icon3.png" alt="icon" class="benefits__box-icon">
+                    <h4 class="benefits__box-title">Comfort</h4>
+                    <p class="benefits__box-text">
+                        Sit veniam aute dolore adipisicing nulla sit culpa. Minim mollit voluptate ullamco proident ea ad.
+                    </p>
+                </div>
+            </div>
+
+            <button class="benefits__submit-btn">Discuss a project</button>
+
+        </section>
+
+        <section class="related-projects">
+            <div class="related-projects__container">
+                <div class="title__block">
+
+                    <h2 class="related-projects__title">Related projects</h2>
+
+                    <div class="related-projects__slider">
+                        <img src="../../img/Services/rel.projects_arrow-left.png" alt="icon" class="slider-arrow-left">
+                        <img src="../../img/Services/rel.projects_arrow-right.png" alt="icon" class="slider-arrow-right">
+                    </div>
+
+                </div>
+
+                <div class="related-projects__cards">
+
+                    <div class="related-projects__card">
+                        <img src="../../img/Services/rel.projects_img1.png" alt="picture" class="card__img">
+                        <div class="card__info">
+                            <h3 class="card__title">Kids Bedroom With Decorations</h3>
+                            <p class="card_span">Apartments & flats</p>
+                            <div class="card__button">
+                                <a href="№" class="card__button-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="related-projects__card">
+                        <img src="../../img/Services/rel.projects_img2.jpeg" alt="picture" class="card__img">
+                        <div class="card__info">
+                            <h3 class="card__title">Modern Double Bedroom</h3>
+                            <p class="card_span">Apartments & flats</p>
+                            <div class="card__button">
+                                <a href="№" class="card__button-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="related-projects__card">
+                        <img src="../../img/Services/rel.projects_img3.png" alt="picture" class="card__img">
+                        <div class="card__info">
+                            <h3 class="card__title">Scandinavian Style Interior</h3>
+                            <p class="card_span">Private houses</p>
+                            <div class="card__button">
+                                <a href="№" class="card__button-link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="related-projects__learn-more">
+                    <p class="related-projects__learn-more-text">Explore all our works</p>
+                    <button class="submit-btn" id="related-projects__submit-btn">View portfolio</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="background">
+
+            <section class="pricing">
+                <div class="pricing__container">
+                    <h2 class="pricing__title">Pricing</h2>
+                    <p class="pricing__text">
+                        We offer you three categories of construction.
+                    </p>
+                    <table class="pricing__tariffs" cellspacing="0" cellpadding="0">
+                        <tr class="pricing__tariffs-headings">
+                            <th></th>
+                            <th>basic</th>
+                            <th>standard</th>
+                            <th>business</th>
+                        </tr>
+                        <tr class="pricing__tariffs-subheadings">
+                            <th class="tariffs-subheadings-head">Items</th>
+                            <th class="pricing__tariffs-subheading">$20 per m2</th>
+                            <th class="pricing__tariffs-subheading">$30 per m2</th>
+                            <th class="pricing__tariffs-subheading">$40 per m2</th>
+                        </tr>
+        
+                        <tr class="pricing__tariffs-line" id="tariffs-line1">
+                            <td class="tariffs-line-heading">Installation plan</td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                        </tr>
+                        <tr class="pricing__tariffs-line" id="tariffs-line2">
+                            <td class="tariffs-line-heading">Planning solutions (2-3 options)</td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                        </tr>
+                        <tr class="pricing__tariffs-line" id="tariffs-line3">
+                            <td class="tariffs-line-heading">Lighting plan</td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                        </tr>
+                        <tr class="pricing__tariffs-line" id="tariffs-line4">
+                            <td class="tariffs-line-heading">Flooring plan</td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                        </tr>
+                        <tr class="pricing__tariffs-line" id="tariffs-line5">
+                            <td class="tariffs-line-heading">Heating floor laying scheme</td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                        </tr>
+                        <tr class="pricing__tariffs-line" id="tariffs-line6">
+                            <td class="tariffs-line-heading">Air conditioner zones layout</td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                        </tr>
+                        <tr class="pricing__tariffs-line" id="tariffs-line7">
+                            <td class="tariffs-line-heading">3D visualization of all rooms</td>
+                            <td>simplified</td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                        </tr>
+                        <tr class="pricing__tariffs-line" id="tariffs-line8">
+                            <td class="tariffs-line-heading">Visualization of each room (3-4 angles)</td>
+                            <td></td>
+                            <td></td>
+                            <td><img src="../../img/Services/pricing_check-mark.png" alt="icon" class="pricing__check"></td>
+                        </tr>
+                        <tr class="pricing__tariffs-line" id="tariffs-line9">
+                            <td class="tariffs-line-heading">Terms</td>
+                            <td>10 days</td>
+                            <td>20 days</td>
+                            <td>30 days</td>
+                        </tr>
+        
+                        <tr class="pricing__buttons" height="90px">
+                            <td></td>
+                            <td class="pricing__button" >
+                                <button class="pricing__submit-btn">send request</button>
+                            </td>
+                            <td class="pricing__button">
+                                <button class="pricing__submit-btn">send request</button>
+                            </td>
+                            <td class="pricing__button">
+                                <button class="pricing__submit-btn">send request</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section class="clients">
+                <div class="clients__container">
+                    <h2 class="clients__title">Supported by 12+ partners</h2>
+                    <div class="clients__block">
+                        <img src="../../img/Services/clients-logo1.svg" alt="icon" class="client__icon">
+                        <img src="../../img/Services/clients-logo2.svg" alt="icon" class="client__icon">
+                        <img src="../../img/Services/clients-logo3.svg" alt="icon" class="client__icon">
+                        <img src="../../img/Services/clients-logo4.svg" alt="icon" class="client__icon">
+                        <img src="../../img/Services/clients-logo5.svg" alt="icon" class="client__icon">
+                        <img src="../../img/Services/clients-logo6.svg" alt="icon" class="client__icon">
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="application">
+        
+            <fieldset class="app__form">
+
+                <div class="app__form-container">
+
+                    <h2 class="app__form-title">A quick way to discuss details</h2>
+
+                    <div class="app__form-input">
+                        <p class="app__form-input-label">Name*</p>
+                        <input type="text" class="form__input" placeholder="Your name">
+                    </div>
+
+                    <div class="app__form-input">
+                        <p class="app__form-input-label">Phone*</p>
+                        <input type="text" class="form__input" placeholder="Your phone number">
+                    </div>
+
+                    <div class="app__form-input">
+                        <p class="app__form-input-label">Email</p>
+                        <input type="text" class="form__input" placeholder="Your working email">
+                    </div>
+
+                    <div class="app__form-input">
+                        <p class="app__form-input-label">Message*</p>
+                        <input type="text" class="form__input message" placeholder="Your message">
+                    </div>
+
+                    <div class="checkbox__form">
+                        <input type="checkbox" class="checkbox">
+                        <p class="checkbox__span">
+                            I agree to receive communications from Createx Construction Bureau.
+                        </p>
+                    </div>
+                    
+                    <button class="application__submit-btn">Send request</button>
+
+                </div>
+
+            </fieldset>
+
+        </section>
+
+        <footer class="footer">
+    
+            <div class="footer__container">
+    
+                <div class="block1">
+    
+                    <div class="block1__mission">
+                        <div class="block1__mission-logo">
+                            <img src="../../img/Homepage/footer_logo.svg" alt="logo" class="mission-logo">
+                            <ul class="block1__mission-socials">
+                                <li class="social-icon">
+                                    <img src="../../img/Homepage/footer_WhatsApp-icon.svg" alt="icon" class="social-icon-whatsapp">
+                                </li>
+                                <li class="social-icon">
+                                    <img src="../../img/Homepage/footer_Messenger-icon.svg" alt="icon" class="social-icon-messenger">
+                                </li>
+                                <li class="social-icon">
+                                    <img src="../../img/Homepage/footer_Facebook-icon.svg" alt="icon" class="social-icon-facebook">
+                                </li>
+                                <li class="social-icon">
+                                    <img src="../../img/Homepage/footer_Twitter-icon.svg" alt="icon" class="social-icon-twitter">
+                                </li>
+                                <li class="social-icon">
+                                    <img src="../../img/Homepage/footer_Youtube-icon.svg" alt="icon" class="social-icon-twitter">
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="block1__mission-text">
+                            Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are proud to offer you quality construction and exemplary service. Our mission is to set the highest standards for construction sphere.
+                        </p>
+                    </div>
+    
+                    <div class="block1__subsribe">
+                        <p class="subscribe__label">Let's stay in touch</p>
+                        <div class="subscribe__block">
+                            <input type="text" class="subscibe__form" placeholder="Your email address">
+                            <button class="subscribe__btn">subscribe</button>
+                        </div>
+                        <span class="subscribe__comment">
+                            *Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.
+                        </span>
+                    </div>
+    
+                </div>
+    
+                <div class="block2">
+    
+                    <div class="address">
+                        <p class="heading">head office</p>
+                        <p class="line"><span>Address: </span>8502 Preston Rd. Inglewood, New York</p>
+                        <p class="line"><span>Call: </span>(405) 555-0128</p>
+                        <p class="line"><span>Email: </span>hello@createx.com</p>
+                    </div>
+    
+                    <div class="contacts">
+                        <p class="heading">who we are</p>
+                        <ul class="lines">
+                            <li class="line">About us</li>
+                            <li class="line">Available Position</li>
+                            <li class="line">Contacts</li>
                         </ul>
                     </div>
-                    <p class="block1__mission-text">
-                        Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are proud to offer you quality construction and exemplary service. Our mission is to set the highest standards for construction sphere.
-                    </p>
-                </div>
-
-                <div class="block1__subsribe">
-                    <p class="subscribe__label">Let's stay in touch</p>
-                    <div class="subscribe__block">
-                        <input type="text" class="subscibe__form" placeholder="Your email address">
-                        <button class="subscribe__btn">subscribe</button>
-                    </div>
-                    <span class="subscribe__comment">
-                        *Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.
-                    </span>
-                </div>
-
-            </div>
-
-            <div class="block2">
-
-                <div class="address">
-                    <p class="heading">head office</p>
-                    <p class="line"><span>Address: </span>8502 Preston Rd. Inglewood, New York</p>
-                    <p class="line"><span>Call: </span>(405) 555-0128</p>
-                    <p class="line"><span>Email: </span>hello@createx.com</p>
-                </div>
-
-                <div class="contacts">
-                    <p class="heading">who we are</p>
-                    <ul class="lines">
-                        <li class="line">About us</li>
-                        <li class="line">Available Position</li>
-                        <li class="line">Contacts</li>
-                    </ul>
-                </div>
-
-                <div class="experience">
-                    <p class="heading">our experience</p>
-                    <ul class="lines">
-                        <li class="line">Services</li>
-                        <li class="line">Work</li>
-                        <li class="line">News</li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="block3">
-
-                <div class="copyright">
-                    <p class="copyright-span">© All rights reserved. Made with <span><img src="./img/footer_heart-icon.svg" alt="icon" class="heart-icon"></span> by Createx Studio </p>
-                </div>
-
-                <div class="navigation-btn">
-                    <p class="navigation-span">GO TO TOP</p>
-                    <img src="../../img/footer_up-btn.svg" alt="icon" class="up-btn">
-                </div>
-
-            </div>
-
-        </div>
-
-    </footer>
     
+                    <div class="experience">
+                        <p class="heading">our experience</p>
+                        <ul class="lines">
+                            <li class="line">Services</li>
+                            <li class="line">Work</li>
+                            <li class="line">News</li>
+                        </ul>
+                    </div>
+    
+                </div>
+    
+                <div class="block3">
+    
+                    <div class="copyright">
+                        <p class="copyright-span">© All rights reserved. Made with <span><img src="../../img/Homepage/footer_heart-icon.svg" alt="icon" class="heart-icon"></span> by Createx Studio </p>
+                    </div>
+    
+                    <div class="navigation-btn">
+                        <p class="navigation-span">GO TO TOP</p>
+                        <img src="../../img/Homepage/footer_up-btn.svg" alt="icon" class="up-btn">
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </footer>
+
+    </main>
+     
 </body>
 </html>

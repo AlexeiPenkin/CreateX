@@ -10,10 +10,8 @@ body {
 /* Header */
 
 .header {
-    position: absolute;
-    height: 52px;
-    margin: 20px 345px 80px;
-    z-index: 10;
+    padding-top: 20px;
+    margin: 0 345px 80px;
 }
 .header__navbar {
     display: flex;
@@ -22,21 +20,25 @@ body {
 }
 .header__navbar-logo {
     margin-right: 60px;
+    cursor: pointer;
 }
 .header__navbar-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 447px;
+    min-width: 447px;
     margin-right: 172px;
 }
 .navbar-menu-item {
     font-weight: 700;
     font-size: 16px;
-    line-height: 160%; /* 22px */
+    line-height: 160%;
     color: #424551;
     margin-right: 40px;
     cursor: pointer;
+}
+.navbar-menu-item:hover {
+    color: #FF5A30;
 }
 .navbar-menu-item:last-child {
     margin-right: 0;
@@ -82,6 +84,7 @@ body {
 }
 #navbar-call-email {
     width: 210px;
+    cursor: pointer;
 }
 
 /* Intro */
@@ -94,19 +97,17 @@ body {
     align-items: right;
     width: 1920px;
     height: 600px;
-    background-image: url('../../img/Services/intro_background.svg');
+    background-image: url('../../img/Services/IntDesign_intro-background.png');
     background-size: cover;
     background-repeat: no-repeat;
-    /* padding-top: 80px; */
 }
 .intro__container {
-    margin: 80px 345px 120px;
+    margin: 70px 345px 120px;
 }
 .navigation__links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 145px;
+    align-items: left;
+    width: auto;
     margin-top: 80px;
     margin-bottom: 40px;
 }
@@ -124,6 +125,7 @@ body {
     font-size: 14px;
     line-height: 150%;
     color: #9A9CA5;
+    margin: 0 8px 0;
 }
 .intro__title {
     width: 600px;
@@ -144,43 +146,41 @@ body {
 
 /* Cards */
 
-.cards {
+.offer__cards {
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: 120px 345px 180px;
+    margin: 118px 345px 180px;
 }
-.card {
+.offer__card {
     display: flex;
     margin: 0 345px;
     width: 1230px;
     gap: 105px;
 }
-.card__info-img {
+.offer__card-img {
     width: 705px;
     height: 440px;
 }
-.card__info {
+.offer__card-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: right;
+    /* width: 420px;
+    height: 440px; */
 }
-.card__info-title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 150%;
-    color: #1E212C;
-    margin: 0 0 60px;
-
+.offer__card-title {
+    font-family: 'Lato';
     font-weight: 900;
     font-size: 46px;
     line-height: 130%;
     color: #1E212C;
+    margin: 0 0 35px;
 }
-.card__design-options {
+.offer__card-options {
     display: flex;
 }
 .folding-sign {
@@ -193,23 +193,32 @@ body {
     height: 2px;
     margin-top: 20px;
 }
-.card__info-description {
+.offer__card-description {
+    display: flex;
+    flex-direction: column;
 }
-.card__info-heading {
+.offer__card-heading {
+    font-family: 'Ubuntu';
     font-weight: 700;
     font-size: 28px;
     line-height: 150%;
-    display: flex;
-    align-items: center;
     color: #1E212C;
     margin-bottom: 12px;
 }
-.card__info-text {
+.offer__card-heading:last-child {
+    margin-bottom: 0;
+}
+.offer__card-text {
+    font-family: 'Ubuntu';
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
-    color: #787A80;
+    color: #787A80; 
     margin-bottom: 24px;
+}
+.offer__card-text:last-child {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Workflow */
@@ -220,6 +229,7 @@ body {
     justify-content: space-between;
     width: 1230px;
     height: 312px;
+    font-family: 'Ubuntu';
     margin: 0 345px 120px;
 }
 .workflow__title {
@@ -281,9 +291,12 @@ body {
 /* Benefits */
 
 .benefits {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 565px;
+    font-family: 'Ubuntu';
     background-color: #1E212C;
     margin: 0 0 180px;
 }
@@ -308,7 +321,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 60px 345px 126px;
+    margin: 0 345px 126px;
     width: 1231px;
 }
 .benefits__box {
@@ -342,22 +355,36 @@ body {
     color: #787A80;
 }
 .benefits__submit-btn {
+    position: absolute;
+    top: 539px;
     width: 390px;
     height: 52px;
     background: #FF5A30;
     border-radius: 4px;
-    margin: 0 auto -25px;
+    margin: 0 auto;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.benefits__submit-btn:hover {
+    background: rgb(255, 88, 46, 0.5);
 }
 
 /* Related projects */
 
 .related-projects {
+    font-family: 'Ubuntu';
     background-color: #fff;
 }
 .related-projects__container {
     width: 1242px;
     min-height: 692px;
-    margin: 0 345px 120px;
+    margin: 0 345px 88px;
 }
 .title__block {
     display: flex;
@@ -376,11 +403,11 @@ body {
 }
 
 .related-projects__slider {
-    width: 84px;
-    height: 48px;
+    width: 72px;
+    height: 24px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:end;
     margin-bottom: 48px;
 }
 .slider-arrow-left {
@@ -390,39 +417,47 @@ body {
 .related-projects__cards {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 1230px;
     color: #000;
     margin-bottom: 80px;
 }
 .related-projects__card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 390px;
-
     box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
     border-radius: 4px;
+    cursor: pointer;
 }
-.card__img {
-    margin-bottom: 16px;
+.card__info {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 95px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.card__info:hover {
+    overflow: visible;
+    transform: translateY(-68px);
 }
 .card__title {
-    margin-bottom: 4px;
     font-weight: 700;
     font-size: 20px;
-    line-height: 150%; /* 30px */
+    line-height: 150%;
     text-align: center;
     color: #1E212C;
+    margin: 16px 0 4px;
 }
 .card_span {
-    margin-bottom: 24px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 150%; /* 21px */
+    line-height: 150%;
     text-align: center;
     color: #787A80;
+    margin-bottom: 24px;
 }
-.card__btn {
+.card__button {
     width: 172px;
     height: 44px;
     border: 1px solid #FF5A30;
@@ -430,6 +465,23 @@ body {
     border-radius: 4px;
     margin: 0 109px 24px;
     cursor: pointer;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #FF5A30;
+}
+.card__button-link {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: auto 32px;
 }
 
 .related-projects__learn-more {
@@ -453,7 +505,18 @@ body {
     height: 52px;
     background: #FF5A30;
     border-radius: 4px;
-    color: #fff;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+#related-projects__submit-btn:hover {
+    background: rgb(255, 90, 48, 0.5);
 }
 
 /* Background */
@@ -474,7 +537,7 @@ body {
     width: 1920px;
     height: 914px;
     background-image: url('../../img/Services/pricing_background.svg');
-    margin-bottom: 120px;
+    margin-bottom: 132px;
 }
 .pricing__title {
     font-weight: 700;
@@ -483,7 +546,7 @@ body {
     text-align: center;
     margin: 0 auto 24px;
     color: #1E212C;
-    margin-top: 80px;
+    margin-top: 92px;
     margin-bottom: 24px;
 }
 .pricing__text {
@@ -505,14 +568,15 @@ table {
 }
 .pricing__tariffs-headings {
     width: 245px;
-    height: 36px;
+    height: 68px;
     font-weight: 700;
     font-size: 24px;
     line-height: 150%;
     text-transform: uppercase;
-    text-align: center;
+    text-align: bottom;
     color: #1E212C;
     margin-bottom: 2px;
+    vertical-align: bottom;
 }
 .pricing__tariffs-heading {
     width: 245px;
@@ -527,11 +591,11 @@ table {
 }
 .pricing__tariffs-subheadings {
     width: 245px;
-    height: 27px;
+    height: 49px;
     font-weight: 700;
     font-size: 18px;
     line-height: 150%;
-    text-align: center;
+    vertical-align: top;
     color: #787A80;
 }
 .tariffs-subheadings-head {
@@ -540,6 +604,7 @@ table {
     line-height: 150%;
     color: #1E212C;
     text-align: left;
+    padding-left: 24px;
 }
 .tariffs-line-heading {
     font-weight: 400;
@@ -547,6 +612,7 @@ table {
     line-height: 160%;
     color: #424551;
     text-align: left;
+    padding-left: 24px;
 }
 .pricing__tariffs-line {
     height: 58px;
@@ -629,7 +695,7 @@ td {
     align-items: center;
     width: 1920px;
     height: 826px;
-    background-image: url('../../img/application_background.png');
+    background-image: url('../../img/Homepage/application_background.png');
     background-repeat: no-repeat;
     background-color: #fff;
     margin-bottom: 0;
@@ -662,7 +728,7 @@ td {
     align-items: center;
     width: 415px;
     height: 560px;
-    margin: 58px 40px 48px;
+    margin: 47px 40px;
 }
 .app__form-input {
     display: flex;
@@ -677,6 +743,13 @@ td {
     border-radius: 4px;
     background: #F4F5F7;
     padding: 11px 16px 12px;
+}
+.form__input.message {
+    height: 66px;
+    border: 1px solid #D7DADD;
+    border-radius: 4px;
+    background: #F4F5F7;
+    padding: 11px 16px 34px;
 }
 .app__form-input-label {
     font-weight: 400;
@@ -704,17 +777,22 @@ td {
     line-height: 150%;
     color: #424551;
 }
-.submit-btn {
+.application__submit-btn {
     width: 174px;
     height: 44px;
+    bottom: 48px;
+    background: #FF5A30;
+    border-radius: 4px;
     font-weight: 700;
     font-size: 14px;
     line-height: 44px;
     text-align: center;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    background: #FF5A30;
-    border-radius: 4px;
+    color: #FFFFFF;
+}
+.application__submit-btn:hover {
+    background: rgb(255, 90, 48, 0.5);
 }
 
 /* Footer */
@@ -736,7 +814,6 @@ td {
 .block1 {
     display: flex;
     margin-bottom: 49px;
-    /* border: 1px dotted #8e8e8e; */
 }
 .block1__mission {
     display: flex;
@@ -746,10 +823,10 @@ td {
 }
 .block1__mission-logo {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     margin-right: 242px;
     margin-bottom: 24px;
+    cursor: pointer;
 }
 .mission-logo {
     margin-right: 60px;
@@ -761,7 +838,14 @@ td {
     width: 184px;
 }
 .social-icon {
-    margin-right: 18px;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in;
+}
+.social-icon:hover {
+    transform: scale(1.5);
 }
 .social-icon:last-child {
     margin-right: 0;
@@ -825,7 +909,9 @@ opacity: 0.6;
     text-transform: uppercase;
     color: #FFFFFF;
 }
-
+.subscribe__btn:hover {
+    background: rgb(255, 90, 48, 0.5);
+}
 
 .block2 {
     height: 123px;
@@ -833,7 +919,7 @@ opacity: 0.6;
     margin-bottom: 60px;
 }
 .address {
-    width: 350px;
+    width: 352px;
     margin-right: 124px;
 }
 .heading {
@@ -865,7 +951,6 @@ opacity: 0.6;
 
 .experience {
     width: 152px;
-    /* margin-right: 690px; */
 }
 
 
@@ -899,6 +984,7 @@ opacity: 0.6;
     width: 129px;
     height: 40px;
     margin-top: -22px;
+    cursor: pointer;
 }
 .navigation-span {
     font-weight: 400;

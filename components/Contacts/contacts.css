@@ -10,24 +10,25 @@ body {
 /* Header */
 
 .header {
-    position: absolute;
-    height: 52px;
-    margin: 20px 345px 80px;
-    z-index: 10;
+    padding-top: 20px;
+    margin: 0 345px 80px;
 }
 .header__navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header__navbar-logo {
+.header__navbar-logo-link {
     margin-right: 60px;
+}
+.header__navbar-logo {
+    cursor: pointer;
 }
 .header__navbar-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 447px;
+    min-width: 447px;
     margin-right: 172px;
 }
 .navbar-menu-item {
@@ -37,6 +38,9 @@ body {
     color: #424551;
     margin-right: 40px;
     cursor: pointer;
+}
+.navbar-menu-item:hover {
+    color: #FF5A30;
 }
 .navbar-menu-item:last-child {
     margin-right: 0;
@@ -82,6 +86,14 @@ body {
 }
 #navbar-call-email {
     width: 210px;
+    cursor: pointer;
+}
+
+/* Main */
+
+main {
+    margin-top: -152px;
+    z-index: -10;
 }
 
 /* Intro */
@@ -91,20 +103,22 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: right;
+
     width: 1920px;
     height: 600px;
-    background-image: url('../../img/Contacts/intro_background.png');
+
+    background-image: url('/img/Contacts/intro_background.png');
     background-repeat: no-repeat;
-    margin-bottom: 121px;
+    margin-bottom: 120px;
 }
 .intro__container {
-    margin: 80px 345px 120px;
+    width: 600px;
+    height: 269px;
+    margin: 152px 345px 176px;
 }
 .navigation__links {
     display: flex;
-    align-items: center;
-    width: 487px;
-    margin-top: 80px;
+    align-items: left;
     margin-bottom: 40px;
 }
 .navigation__link {
@@ -124,16 +138,17 @@ body {
     margin: 0 8px 0;
 }
 .intro__title {
-    width: 1230px;
+    width: 600px;
     font-weight: 700;
-    font-size: 64px;
-    line-height: 120%;
+    font-size: 72px;
+    line-height: 130%;
     letter-spacing: 1px;
     color: #1E212C;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
 }
 .intro__text {
     width: 600px;
+    font-weight: 400;
     font-size: 20px;
     line-height: 150%;
     color: #787A80;
@@ -455,10 +470,10 @@ body {
     color: #1E212C;
     margin-bottom: 4px;
 }
-.office__card-link {
+a.office__card-link {
     font-size: 16px;
     line-height: 160%;
-    text-decoration-line: underline;
+    text-decoration: underline;
     color: #FF5A30;
     margin-bottom: 20px;
 }

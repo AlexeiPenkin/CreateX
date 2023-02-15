@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./work.css">
     <link rel="stylesheet" href="../../css/style.css">
@@ -13,320 +12,352 @@
 
     <header class="header">
         <nav class="header__navbar">
-            <img src="../../img/header_logo.svg" alt="logo" class="header__navbar-logo">
-            <ul class="header__navbar-menu">
-                <li class="navbar-menu-item">About Us</li>
-                <li class="navbar-menu-item">Services</li>
-                <li class="navbar-menu-item">Work</li>
-                <li class="navbar-menu-item">News</li>
-                <li class="navbar-menu-item">Contacts</li>
-            </ul>
+
+            <a href="/index.html" class="header__navbar-logo-link">
+                <img src="/img/About/header_logo.svg" alt="logo" class="header__navbar-logo">
+            </a>
+
+            <nav class="header__navbar-menu">
+                <a class="navbar-menu-item" href="/components/About/about.html">About Us</a>
+                <a class="navbar-menu-item" href="/components/Services/services.html">Services</a>
+                <a class="navbar-menu-item" href="/components/Work/work.html">Work</a>
+                <a class="navbar-menu-item" href="/components/News//news.html">News</a>
+                <a class="navbar-menu-item" href="/components/Contacts/contacts.html">Contacts</a>
+            </nav>
+
             <div class="navbar-call">
-
                 <div class="navbar-call-block" id="navbar-call-phone">
-
-                    <img src="../../img/header_mob.phone-icon.svg" alt="icon" class="navbar-call-icon">
-
+                    <img src="/img/Work/header_mob.phone-icon.svg" alt="icon" class="navbar-call-icon">
                     <div class="navbar__contact">
                         <div class="navbar-call-label">Call us</div>
                         <div class="navbar-call-contact">(405) 555-0128</div>
                     </div>
-
                 </div>
 
                 <div class="navbar-call-block" id="navbar-call-email">
 
-                    <img src="../../img/header_chat-icon.svg" alt="icon" class="navbar-call-icon">
-
+                    <img src="/img/Work/header_chat-icon.svg" alt="icon" class="navbar-call-icon">
                     <div class="navbar__contact">
                         <div class="navbar-call-label">Talk to us</div>
                         <div class="navbar-call-contact">hello@createx.com</div>
                     </div>
                 </div>
             </div>
+
         </nav>
     </header>
 
-    <section class="intro">
+    <main class="main">
 
-        <div class="intro__container">
+        <section class="intro">
+            <div class="intro__container">
 
-            <nav class="navigation__links">
-                <a href="#" class="navigation__link" id="visited">Homepage</a>
-                <p class="navigation__links_divider">/</p>                <a href="#" class="navigation__link">Work</a>
-            </nav>
+                <nav class="navigation__links">
+                    <a href="/index.html" class="navigation__link" id="visited">Homepage</a>
+                    <p class="navigation__links_divider">/</p>                <a href="#" class="navigation__link">Work</a>
+                </nav>
 
-            <h1 class="intro__title">OUR WORK</h1>
+                <h1 class="intro__title">OUR WORK</h1>
 
-            <p class="intro__text">
-                Our portfolio represents 20 years of construction experience backed by a passion for perfect client service, quality and innovations in consctuction industry.
-            </p>
-
-            <div class="tabs">
-
-                <div class="tab" id="tab-projects">
-                    <img src="../../img/Work/tab-projects.svg" alt="icon" class="tab__icon">
-                    <span class="tab__icon-title">All projects</span>
-                </div>
-
-                <div class="tab" id="tab-construction">
-                    <img src="../../img/Work/tab-construction.svg" alt="icon" class="tab__icon">
-                    <span class="tab__icon-title">Construction</span>
-                </div>
-
-                <div class="tab" id="tab-development">
-                    <img src="../../img/Work/tab-development.svg" alt="icon" class="tab__icon">
-                    <span class="tab__icon-title">Project Development</span>
-                </div>
-
-                <div class="tab" id="tab-design">
-                    <img src="../../img/Work/tab-design.svg" alt="icon" class="tab__icon">
-                    <span class="tab__icon-title">Interior Design</span>
-                </div>
-
-                <div class="tab" id="tab-repairs">
-                    <img src="../../img/Work/tab-repairs.svg" alt="icon" class="tab__icon">
-                    <span class="tab__icon-title">Repairs</span>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="cards">
-        <div class="cards__container">
-            <div class="card">
-                <img src="../../img/Work/card1_image.png" alt="" class="card__img">
-                <h3 class="card__title">Cubes Building</h3>
-                <p class="card__subtitle">Business Centers</p>
-            </div>
-
-            <div class="card">
-                <img src="../../img/Work/card2_image.png" alt="" class="card__img">
-                <h3 class="card__title">Modern Cottage</h3>
-                <p class="card__subtitle">Private houses</p>
-            </div>
-
-            <div class="card">
-                <img src="../../img/Work/card3_image.png" alt="" class="card__img">
-                <h3 class="card__title">Luxury Beach House</h3>
-                <p class="card__subtitle">Private houses</p>
-            </div>
-
-            <div class="card">
-                <img src="../../img/Work/card4_image.png" alt="" class="card__img">
-                <h3 class="card__title">Modern Double Bedroom</h3>
-                <p class="card__subtitle">Apartments & flats</p>
-            </div>
-
-            <div class="card">
-                <img src="../../img/Work/card5_image.png" alt="" class="card__img">
-                <h3 class="card__title">Kids Bedroom With Decorations</h3>
-                <p class="card__subtitle">Apartments & flats</p>
-            </div>
-
-            <div class="card">
-                <img src="../../img/Work/card6_image.png" alt="" class="card__img">
-                <h3 class="card__title">The Pencil Building</h3>
-                <p class="card__subtitle">Stores & Malls</p>
-                <button class="card__btn">View Project</button>
-            </div>
-
-            <div class="card">
-                <img src="../../img/Work/card7_image.png" alt="" class="card__img">
-                <h3 class="card__title">Red Finger Building</h3>
-                <p class="card__subtitle">Business Centers</p>
-            </div>
-
-            <div class="card">
-                <img src="../../img/Work/card8_image.png" alt="" class="card__img">
-                <h3 class="card__title">Scandinavian Style Interior</h3>
-                <p class="card__subtitle">Private houses</p>
-            </div>
-
-            <div class="card">
-                <img src="../../img/Work/card9_image.png" alt="" class="card__img">
-                <h3 class="card__title">Brown and Gray Painted House</h3>
-                <p class="card__subtitle">Private houses</p>
-            </div>
-        </div>
-
-        <button class="card__button">
-            <img src="../../img/Work/card_btn-icon.svg" alt="btn-icon" class="card__button-icon">
-            Load more
-        </button>
-    </section>
-
-    <div class="testimonials__background">
-        <section class="testimonials">
-        
-            <div class="testimonials__info">
-
-                <h2 class="testimonials__title">What our clients are saying</h2>
-
-                <img src="../../img/testimonials_profile-image.svg" alt="photo" class="profile__img">
-
-                <p class="testimonials__review">
-                    Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum consequat minim  laboris cillum laboris voluptate minim proident exercitation ullamco. 
+                <p class="intro__text">
+                    Our portfolio represents 20 years of construction experience backed by a passion for perfect client service, quality and innovations in consctuction industry.
                 </p>
 
-                <div class="review__author">
+                <div class="tabs">
 
-                    <p class="review__author-name">Shawn Edwards</p>
+                    <div class="tab" id="tab-projects">
+                        <img src="../../img/Work/tab-projects.svg" alt="icon" class="tab__icon">
+                        <span class="tab__icon-title">All projects</span>
+                    </div>
 
-                    <div class="review__author-block">
+                    <div class="tab" id="tab-construction">
+                        <img src="../../img/Work/tab-construction.svg" alt="icon" class="tab__icon">
+                        <span class="tab__icon-title">Construction</span>
+                    </div>
 
-                        <p class="review__author-position">Position, Company name</p>
+                    <div class="tab" id="tab-development">
+                        <img src="../../img/Work/tab-development.svg" alt="icon" class="tab__icon">
+                        <span class="tab__icon-title">Project Development</span>
+                    </div>
 
-                        <div class="testimonials__slider">
-                            <img src="../../img/testimonials_slider_arrow-prev.svg" alt="arrow" class="slider__arrow-prev">
-                            <img src="../../img/testimonials_slider_arrow-next.svg" alt="arrow" class="slider__arrow-next">
+                    <div class="tab" id="tab-design">
+                        <img src="../../img/Work/tab-design.svg" alt="icon" class="tab__icon">
+                        <span class="tab__icon-title">Interior Design</span>
+                    </div>
+
+                    <div class="tab" id="tab-repairs">
+                        <img src="../../img/Work/tab-repairs.svg" alt="icon" class="tab__icon">
+                        <span class="tab__icon-title">Repairs</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="projects__cards">
+            <div class="projects__cards-container">
+
+                <div class="projects__card">
+                    <img src="../../img/Work/card1_image.png" alt="#" class="projects__card-img">
+                    <div class="projects__card-info">
+                        <h3 class="projects__card-title">Cubes Building</h3>
+                        <p class="projects__card-subtitle">Business Centers</p>
+                        <a href="#" class="projects__card-button">View Project</a>              
+                    </div>
+
+                </div>
+
+                <div class="projects__card">
+                    <img src="../../img/Work/card2_image.png" alt="#" class="projects__card-img">
+                    <div class="projects__card-info">
+                        <h3 class="projects__card-title">Modern Cottage</h3>
+                        <p class="projects__card-subtitle">Private houses</p>
+                        <a href="/components/Work/work_modern-cottage.html" class="projects__card-button">View Project</a>
+                    </div>
+                </div>
+
+                <div class="projects__card">
+                    <img src="../../img/Work/card3_image.png" alt="#" class="projects__card-img">
+                    <div class="projects__card-info">
+                        <h3 class="projects__card-title">Luxury Beach House</h3>
+                        <p class="projects__card-subtitle">Private houses</p>
+                        <a href="#" class="projects__card-button">View Project</a>
+                    </div>
+                </div>
+
+                <div class="projects__card">
+                    <img src="../../img/Work/card4_image.png" alt="#" class="projects__card-img">
+                    <div class="projects__card-info">
+                        <h3 class="projects__card-title">Modern Double Bedroom</h3>
+                        <p class="projects__card-subtitle">Apartments & flats</p>
+                        <a href="#" class="projects__card-button">View Project</a>
+                    </div>
+                </div>
+
+                <div class="projects__card">
+                    <img src="../../img/Work/card5_image.png" alt="#" class="projects__card-img">
+                    <div class="projects__card-info">
+                        <h3 class="projects__card-title">Kids Bedroom With Decorations</h3>
+                        <p class="projects__card-subtitle">Apartments & flats</p>
+                        <a href="#" class="projects__card-button">View Project</a>
+                    </div>
+                </div>
+
+                <div class="projects__card">
+                    <img src="../../img/Work/card6_image.jpeg" alt="#" class="projects__card-img">
+                    <div class="projects__card-info">
+                        <h3 class="projects__card-title">The Pencil Building</h3>
+                        <p class="projects__card-subtitle">Stores & Malls</p>
+                        <a href="#" class="projects__card-button">View Project</a>
+                    </div>
+                </div>
+
+                <div class="projects__card">
+                    <img src="../../img/Work/card7_image.png" alt="#" class="projects__card-img">
+                    <div class="projects__card-info">
+                        <h3 class="projects__card-title">Red Finger Building</h3>
+                        <p class="projects__card-subtitle">Business Centers</p>
+                        <a href="#" class="projects__card-button">View Project</a>
+                    </div>
+                </div>
+
+                <div class="projects__card">
+                    <img src="../../img/Work/card8_image.png" alt="#" class="projects__card-img">
+                    <div class="projects__card-info">
+                        <h3 class="projects__card-title">Scandinavian Style Interior</h3>
+                        <p class="projects__card-subtitle">Private houses</p>
+                        <a href="#" class="projects__card-button">View Project</a>
+                    </div>
+                </div>
+
+                <div class="projects__card">
+                    <img src="../../img/Work/card9_image.png" alt="#" class="projects__card-img">
+                    <div class="projects__card-info">
+                        <h3 class="projects__card-title">Brown and Gray Painted House</h3>
+                        <p class="projects__card-subtitle">Private houses</p>
+                        <a href="#" class="projects__card-button">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="projects__card-link">
+                <img src="../../img/Work/card_btn-icon.svg" alt="icon" class="projects__card-link-icon">
+                Load more
+            </button>
+        </section>
+
+        <div class="testimonials__background">
+            <section class="testimonials">
+            
+                <div class="testimonials__info">
+
+                    <h2 class="testimonials__title">What our clients are saying</h2>
+
+                    <img src="../../img/Work/testimonials_profile-image.svg" alt="photo" class="profile__img">
+
+                    <p class="testimonials__review">
+                        Ipsum aute sunt aliquip aute et occaecat. Anim minim do cillum eiusmod enim. Consectetur magna cillum consequat minim  laboris cillum laboris voluptate minim proident exercitation ullamco. 
+                    </p>
+
+                    <div class="review__author">
+
+                        <p class="review__author-name">Shawn Edwards</p>
+
+                        <div class="review__author-block">
+
+                            <p class="review__author-position">Position, Company name</p>
+
+                            <div class="testimonials__slider">
+                                <img src="../../img/testimonials_slider_arrow-prev.svg" alt="arrow" class="slider__arrow-prev">
+                                <img src="../../img/testimonials_slider_arrow-next.svg" alt="arrow" class="slider__arrow-next">
+                            </div>
+
                         </div>
 
                     </div>
 
                 </div>
 
-            </div>
+                <img src="../../img/Work/testimonials_image.png" alt="icon" class="testimonials__photo">
 
-            <img src="../../img/testimonials_image.png" alt="icon" class="testimonials__photo">
-
-        </section>
-    </div>
-
-    <section class="clients">
-        <div class="clients__container">
-            <h2 class="clients__title">Our clients</h2>
-            <div class="clients__block">
-                <img src="../../img/clients-logo1.svg" alt="icon" class="client__icon">
-                <img src="../../img/clients-logo2.svg" alt="icon" class="client__icon">
-                <img src="../../img/clients-logo3.svg" alt="icon" class="client__icon">
-                <img src="../../img/clients-logo4.svg" alt="icon" class="client__icon">
-                <img src="../../img/clients-logo5.svg" alt="icon" class="client__icon">
-                <img src="../../img/clients-logo6.svg" alt="icon" class="client__icon">
-            </div>
+            </section>
         </div>
-    </section>
 
-   <section class="application">
-        <fieldset class="app__form">
-            <div class="app__form-container">
-                <h2 class="app__form-title">A quick way to discuss details</h2>
-                <div class="app__form-input">
-                    <p class="app__form-input-label">Name*</p>
-                    <input type="text" class="form__input" placeholder="Your name">
+        <section class="clients">
+            <div class="clients__container">
+                <h2 class="clients__title">Our clients</h2>
+                <div class="clients__block">
+                    <img src="../../img/Work/clients-logo1.svg" alt="icon" class="client__icon">
+                    <img src="../../img/Work/clients-logo2.svg" alt="icon" class="client__icon">
+                    <img src="../../img/Work/clients-logo3.svg" alt="icon" class="client__icon">
+                    <img src="../../img/Work/clients-logo4.svg" alt="icon" class="client__icon">
+                    <img src="../../img/Work/clients-logo5.svg" alt="icon" class="client__icon">
+                    <img src="../../img/Work/clients-logo6.svg" alt="icon" class="client__icon">
                 </div>
-
-                <div class="app__form-input">
-                    <p class="app__form-input-label">Phone*</p>
-                    <input type="text" class="form__input" placeholder="Your phone number">
-                </div>
-
-                <div class="app__form-input">
-                    <p class="app__form-input-label">Email</p>
-                    <input type="text" class="form__input" placeholder="Your working email">
-                </div>
-
-                <div class="app__form-input">
-                    <p class="app__form-input-label">Message*</p>
-                    <input type="text" class="form__input" placeholder="Your message">
-                </div>
-
-                <div class="checkbox__form">
-                    <input type="checkbox" class="checkbox">
-                    <p class="checkbox__span">
-                        I agree to receive communications from Createx Construction Bureau.
-                    </p>
-                </div>
-                
-                <button class="submit-btn">Send request</button>
             </div>
-        </fieldset>
-    </section>
+        </section>
 
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="block1">
-                <div class="block1__mission">
-                    <div class="block1__mission-logo">
-                        <img src="../../img/footer_logo.svg" alt="logo" class="mission-logo">
-                        <ul class="block1__mission-socials">
-                            <li class="social-icon">
-                                <img src="../../img/footer_WhatsApp-icon.svg" alt="icon" class="social-icon-whatsapp">
-                            </li>
-                            <li class="social-icon">
-                                <img src="../../img/footer_Messenger-icon.svg" alt="icon" class="social-icon-messenger">
-                            </li>
-                            <li class="social-icon">
-                                <img src="../../img/footer_Facebook-icon.svg" alt="icon" class="social-icon-facebook">
-                            </li>
-                            <li class="social-icon">
-                                <img src="../../img/footer_Twitter-icon.svg" alt="icon" class="social-icon-twitter">
-                            </li>
-                            <li class="social-icon">
-                                <img src="../../img/footer_Youtube-icon.svg" alt="icon" class="social-icon-twitter">
-                            </li>
+        <section class="application">
+            <fieldset class="app__form">
+                <div class="app__form-container">
+                    <h2 class="app__form-title">A quick way to discuss details</h2>
+                    <div class="app__form-input">
+                        <p class="app__form-input-label">Name*</p>
+                        <input type="text" class="form__input" placeholder="Your name">
+                    </div>
+
+                    <div class="app__form-input">
+                        <p class="app__form-input-label">Phone*</p>
+                        <input type="text" class="form__input" placeholder="Your phone number">
+                    </div>
+
+                    <div class="app__form-input">
+                        <p class="app__form-input-label">Email</p>
+                        <input type="text" class="form__input" placeholder="Your working email">
+                    </div>
+
+                    <div class="app__form-input">
+                        <p class="app__form-input-label">Message*</p>
+                        <input type="text" class="form__input message" placeholder="Your message">
+                    </div>
+
+                    <div class="checkbox__form">
+                        <input type="checkbox" class="checkbox">
+                        <p class="checkbox__span">
+                            I agree to receive communications from Createx Construction Bureau.
+                        </p>
+                    </div>
+                    
+                    <button class="application__submit-btn">Send request</button>
+                </div>
+            </fieldset>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="block1">
+                    <div class="block1__mission">
+                        <div class="block1__mission-logo">
+                            <img src="../../img/Homepage/footer_logo.svg" alt="logo" class="mission-logo">
+                            <ul class="block1__mission-socials">
+                                <li class="social-icon">
+                                    <img src="../../img/Homepage/footer_WhatsApp-icon.svg" alt="icon" class="social-icon-whatsapp">
+                                </li>
+                                <li class="social-icon">
+                                    <img src="../../img/Homepage/footer_Messenger-icon.svg" alt="icon" class="social-icon-messenger">
+                                </li>
+                                <li class="social-icon">
+                                    <img src="../../img/Homepage/footer_Facebook-icon.svg" alt="icon" class="social-icon-facebook">
+                                </li>
+                                <li class="social-icon">
+                                    <img src="../../img/Homepage/footer_Twitter-icon.svg" alt="icon" class="social-icon-twitter">
+                                </li>
+                                <li class="social-icon">
+                                    <img src="../../img/Homepage/footer_Youtube-icon.svg" alt="icon" class="social-icon-twitter">
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="block1__mission-text">
+                            Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are proud to offer you quality construction and exemplary service. Our mission is to set the highest standards for construction sphere.
+                        </p>
+                    </div>
+
+                    <div class="block1__subsribe">
+                        <p class="subscribe__label">Let's stay in touch</p>
+                        <div class="subscribe__block">
+                            <input type="text" class="subscibe__form" placeholder="Your email address">
+                            <button class="subscribe__btn">subscribe</button>
+                        </div>
+                        <span class="subscribe__comment">
+                            *Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="block2">
+                    <div class="address">
+                        <p class="heading">head office</p>
+                        <p class="line"><span>Address: </span>8502 Preston Rd. Inglewood, New York</p>
+                        <p class="line"><span>Call: </span>(405) 555-0128</p>
+                        <p class="line"><span>Email: </span>hello@createx.com</p>
+                    </div>
+
+                    <div class="contacts">
+                        <p class="heading">who we are</p>
+                        <ul class="lines">
+                            <li class="line">About us</li>
+                            <li class="line">Available Position</li>
+                            <li class="line">Contacts</li>
                         </ul>
                     </div>
-                    <p class="block1__mission-text">
-                        Createx Construction Bureau has been successfully operating in the USA construction market since 2000. We are proud to offer you quality construction and exemplary service. Our mission is to set the highest standards for construction sphere.
-                    </p>
-                </div>
 
-                <div class="block1__subsribe">
-                    <p class="subscribe__label">Let's stay in touch</p>
-                    <div class="subscribe__block">
-                        <input type="text" class="subscibe__form" placeholder="Your email address">
-                        <button class="subscribe__btn">subscribe</button>
+                    <div class="experience">
+                        <p class="heading">our experience</p>
+                        <ul class="lines">
+                            <li class="line">Services</li>
+                            <li class="line">Work</li>
+                            <li class="line">News</li>
+                        </ul>
                     </div>
-                    <span class="subscribe__comment">
-                        *Subscribe to our newsletter to receive communications and early updates from Createx Construction Bureau.
-                    </span>
                 </div>
 
-            </div>
+                <div class="block3">
+                    <div class="copyright">
+                        <p class="copyright-span">© All rights reserved. Made with <span><img src="../../img/Homepage/footer_heart-icon.svg" alt="icon" class="heart-icon"></span> by Createx Studio </p>
+                    </div>
 
-            <div class="block2">
-                <div class="address">
-                    <p class="heading">head office</p>
-                    <p class="line"><span>Address: </span>8502 Preston Rd. Inglewood, New York</p>
-                    <p class="line"><span>Call: </span>(405) 555-0128</p>
-                    <p class="line"><span>Email: </span>hello@createx.com</p>
-                </div>
-
-                <div class="contacts">
-                    <p class="heading">who we are</p>
-                    <ul class="lines">
-                        <li class="line">About us</li>
-                        <li class="line">Available Position</li>
-                        <li class="line">Contacts</li>
-                    </ul>
-                </div>
-
-                <div class="experience">
-                    <p class="heading">our experience</p>
-                    <ul class="lines">
-                        <li class="line">Services</li>
-                        <li class="line">Work</li>
-                        <li class="line">News</li>
-                    </ul>
+                    <div class="navigation-btn">
+                        <p class="navigation-span">GO TO TOP</p>
+                        <img src="/img/Work/footer_up-btn.svg" alt="icon" class="up-btn">
+                    </div>
                 </div>
             </div>
+        </footer> 
 
-            <div class="block3">
-                <div class="copyright">
-                    <p class="copyright-span">© All rights reserved. Made with <span><img src="../../img/footer_heart-icon.svg" alt="icon" class="heart-icon"></span> by Createx Studio </p>
-                </div>
+    </main>
 
-                <div class="navigation-btn">
-                    <p class="navigation-span">GO TO TOP</p>
-                    <img src="../../img/footer_up-btn.svg" alt="icon" class="up-btn">
-                </div>
-            </div>
-        </div>
-    </footer> 
-    
 </body>
 </html>
